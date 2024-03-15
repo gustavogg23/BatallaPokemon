@@ -6,7 +6,134 @@ using System.Threading.Tasks;
 
 namespace BatallaPokemon
 {
-    class Pokemon
+    public class Pokemon
     {
+        //Atributos
+        private int numero;
+        private string nombre;
+        private string tipo1;
+        private string tipo2;
+        private int vida;
+        private int ataque;
+        private int defensa;
+        private int velAtaque;
+        private int velDefensa;
+        private int velocidad;
+
+        // Método constructor
+        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad)
+        {
+            this.numero = numero;
+            this.nombre = nombre;
+            this.tipo1 = tipo1;
+            this.tipo2 = tipo2;
+            this.vida = vida;
+            this.ataque = ataque;
+            this.defensa = defensa;
+            this.velAtaque = velAtaque;
+            this.velDefensa = velDefensa;
+            this.velocidad = velocidad;
+        }
+
+        // Métodos Getters y Setters
+        public int getNumero()
+        {
+            return numero;
+        }
+
+        public void setNumero(int numero)
+        {
+            this.numero = numero;
+        }
+
+        public string getNombre()
+        {
+            return nombre;
+        }
+
+        public void setNombre(string nombre)
+        {
+            this.nombre = nombre;
+        }
+
+        public string getTipo1()
+        {
+            return tipo1;
+        }
+
+        public void setTipo1(string tipo1)
+        {
+            this.tipo1 = tipo1;
+        }
+
+        public string getTipo2()
+        {
+            return tipo2;
+        }
+
+        public void setTipo2(string tipo2)
+        {
+            this.tipo2 = tipo2;
+        }
+
+        public int getVida()
+        {
+            return vida;
+        }
+
+        public void setVida(int vida)
+        {
+            this.vida = vida;
+        }
+
+        public int getAtaque()
+        {
+            return ataque;
+        }
+
+        public void setAtaque(int ataque)
+        {
+            this.ataque = ataque;
+        }
+
+        public int getDefensa()
+        {
+            return defensa;
+        }
+
+        public void setDefensa(int defensa)
+        {
+            this.defensa = defensa;
+        }
+
+        public int getVelAtaque()
+        {
+            return velAtaque;
+        }
+
+        public void setVelAtaque(int velAtaque)
+        {
+            this.velAtaque = velAtaque;
+        }
+
+        public int getVelDefensa()
+        {
+            return velDefensa;
+        }
+
+        public void setVelDefensa(int velDefensa)
+        {
+            this.velDefensa = velDefensa;
+        }
+
+        public int getVelocidad()
+        {
+            return velocidad;
+        }
+
+        public void setVelocidad(int velocidad)
+        {
+            this.velocidad = velocidad;
+        }
     }
 }
