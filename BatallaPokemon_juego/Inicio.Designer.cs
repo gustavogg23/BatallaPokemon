@@ -39,7 +39,10 @@
             this.iniciar.BackColor = System.Drawing.Color.Transparent;
             this.iniciar.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.INICIAR;
             this.iniciar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.iniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iniciar.FlatAppearance.BorderSize = 0;
+            this.iniciar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.iniciar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.iniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.iniciar.Location = new System.Drawing.Point(522, 342);
             this.iniciar.Name = "iniciar";
@@ -53,7 +56,10 @@
             this.torneoBoton.BackColor = System.Drawing.Color.Transparent;
             this.torneoBoton.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.TORN;
             this.torneoBoton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.torneoBoton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.torneoBoton.FlatAppearance.BorderSize = 0;
+            this.torneoBoton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.torneoBoton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.torneoBoton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.torneoBoton.Location = new System.Drawing.Point(402, 524);
             this.torneoBoton.Name = "torneoBoton";
@@ -66,7 +72,10 @@
             this.rankingBoton.BackColor = System.Drawing.Color.Transparent;
             this.rankingBoton.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.ranking1;
             this.rankingBoton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rankingBoton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rankingBoton.FlatAppearance.BorderSize = 0;
+            this.rankingBoton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.rankingBoton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.rankingBoton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rankingBoton.Location = new System.Drawing.Point(678, 524);
             this.rankingBoton.Name = "rankingBoton";
@@ -85,6 +94,7 @@
             this.Controls.Add(this.iniciar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
