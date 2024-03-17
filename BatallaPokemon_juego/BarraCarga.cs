@@ -15,7 +15,8 @@ namespace BatallaPokemon_juego
     {
         private int incremento = 100;
         private int incrementoInicial = 0;
-        private SoundPlayer player = new SoundPlayer("D:/esta PC/Desktop/IMAGENES POKEMON/WhatsApp Video 2024-03-17 at 3.45.50 PM.wav");
+        private SoundPlayer player = new SoundPlayer(Properties.Resources.WhatsApp_Video_2024_03_17_at_3_45_50_PM); 
+        
         public BarraCarga()
         {
             InitializeComponent();
