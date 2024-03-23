@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace BatallaPokemon_juego
 {
-    public class ListaPokemones
+    public class ListaItems
     {
-        //Atributos
-        private NodoPokemon cabeza;
+        // Atributos
+        private NodoItem cabeza;
         private int tamano;
 
-        //Método constructor
-        public ListaPokemones()
+        // Método constructor
+        public ListaItems()
         {
             this.cabeza = null;
             this.tamano = 0;
@@ -26,16 +26,16 @@ namespace BatallaPokemon_juego
         }
 
         // Método para agregar un nuevo nodo al final de la lista
-        public void agregar(Pokemon valor)
+        public void agregar(Item valor)
         {
-            NodoPokemon nuevo = new NodoPokemon(valor); // Se crea un nuevo nodo
+            NodoItem nuevo = new NodoItem(valor); // Se crea un nuevo nodo
             if (estaVacia()) // Si la lista está vacía, el nuevo nodo será la cabeza
             {
                 cabeza = nuevo;
             }
             else // Si la lista no está vacía, se recorre la lista hasta llegar al último nodo y se agrega el nuevo nodo
             {
-                NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+                NodoItem aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
                 while (aux.getSiguiente() != null) // Mientras el nodo auxiliar no sea el último nodo
                 {
                     aux = aux.getSiguiente(); // Se pasa al siguiente nodo
@@ -45,41 +45,41 @@ namespace BatallaPokemon_juego
             tamano++; // Se aumenta el tamaño de la lista
         }
 
-        // Método para buscar un pokemon en la lista
-        public Pokemon buscar(int numero)
+        // Método para buscar un item en la lista
+        public Item buscar(string nombre)
         {
-            NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+            NodoItem aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
             while (aux != null) // Mientras el nodo auxiliar no sea nulo
             {
-                if (aux.getValor().getNumero() == numero) // Si el número del pokemon del nodo auxiliar es igual al número buscado
+                if (aux.getValor().getNombre() == nombre) // Si el nombre del item del nodo auxiliar es igual al nombre buscado
                 {
-                    return aux.getValor(); // Se retorna el pokemon del nodo auxiliar
+                    return aux.getValor(); // Se retorna el item del nodo auxiliar
                 }
                 aux = aux.getSiguiente(); // Se pasa al siguiente nodo
             }
-            return null; // Si no se encuentra el pokemon, se retorna nulo
+            return null; // Si no se encuentra el item, se retorna nulo
         }
 
-        // Método para eliminar un pokemon de la lista
-        public void eliminar(int numero)
+        // Método para eliminar un item de la lista
+        public void eliminar(string nombre)
         {
             if (cabeza != null) // Si la lista no está vacía
             {
-                if (cabeza.getValor().getNumero() == numero) // Si el número del pokemon de la cabeza es igual al número buscado
+                if (cabeza.getValor().getNombre() == nombre) // Si el nombre del item de la cabeza es igual al nombre buscado
                 {
                     cabeza = cabeza.getSiguiente(); // Se elimina la cabeza
                     tamano--; // Se disminuye el tamaño de la lista
                 }
-                else // Si el número del pokemon de la cabeza no es igual al número buscado
+                else // Si el nombre del item de la cabeza no es igual al nombre buscado
                 {
-                    NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+                    NodoItem aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
                     while (aux.getSiguiente() != null) // Mientras el nodo auxiliar no sea el último nodo
                     {
-                        if (aux.getSiguiente().getValor().getNumero() == numero) // Si el número del pokemon del siguiente nodo es igual al número buscado
+                        if (aux.getSiguiente().getValor().getNombre() == nombre) // Si el nombre del item del siguiente nodo es igual al nombre buscado
                         {
-                            aux.setSiguiente(aux.getSiguiente().getSiguiente()); // Se elimina el nodo siguiente
+                            aux.setSiguiente(aux.getSiguiente().getSiguiente()); // Se elimina el siguiente nodo
                             tamano--; // Se disminuye el tamaño de la lista
-                            break; // Se rompe el ciclo
+                            break; // Se sale del ciclo
                         }
                         aux = aux.getSiguiente(); // Se pasa al siguiente nodo
                     }

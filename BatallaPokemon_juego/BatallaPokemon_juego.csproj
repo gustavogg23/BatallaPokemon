@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Archivo.cs" />
+    <Compile Include="Ataque.cs" />
     <Compile Include="BarraCarga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,9 +64,18 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="ListaAtaques.cs" />
     <Compile Include="ListaCircularDE.cs" />
+    <Compile Include="ListaImagenes.cs" />
+    <Compile Include="ListaItems.cs" />
+    <Compile Include="ListaJugadores.cs" />
     <Compile Include="ListaPokemones.cs" />
-    <Compile Include="Nodo.cs" />
+    <Compile Include="NodoAtaque.cs" />
+    <Compile Include="NodoImagen.cs" />
+    <Compile Include="NodoItem.cs" />
+    <Compile Include="NodoJugador.cs" />
+    <Compile Include="NodoPokemon.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -19,9 +19,12 @@ namespace BatallaPokemon_juego
         private int velAtaque;
         private int velDefensa;
         private int velocidad;
+        private string imagenFrente;
+        private string imagenEspalda;
+        private ListaAtaques ataques;
 
         // Método constructor
-        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad)
+        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad, string imagenFrente, string imagenEspalda, ListaAtaques ataques)
         {
             this.numero = numero;
             this.nombre = nombre;
@@ -33,6 +36,9 @@ namespace BatallaPokemon_juego
             this.velAtaque = velAtaque;
             this.velDefensa = velDefensa;
             this.velocidad = velocidad;
+            this.imagenFrente = imagenFrente;
+            this.imagenEspalda = imagenEspalda;
+            this.ataques = ataques;
         }
 
         // Métodos Getters y Setters
@@ -134,6 +140,36 @@ namespace BatallaPokemon_juego
         public void setVelocidad(int velocidad)
         {
             this.velocidad = velocidad;
+        }
+
+        public string getImagenFrente()
+        {
+            return imagenFrente;
+        }
+
+        public void setImagenFrente(string imagenFrente)
+        {
+            this.imagenFrente = imagenFrente;
+        }
+
+        public string getImagenEspalda()
+        {
+            return imagenEspalda;
+        }
+
+        public void setImagenEspalda(string imagenEspalda)
+        {
+            this.imagenEspalda = imagenEspalda;
+        }
+
+        public ListaAtaques getAtaques()
+        {
+            return ataques;
+        }
+
+        public void setAtaques(ListaAtaques ataques)
+        {
+            this.ataques = ataques;
         }
     }
 }

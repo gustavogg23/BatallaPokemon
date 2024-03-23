@@ -9,7 +9,7 @@ namespace BatallaPokemon_juego
     public class ListaCircularDE
     {
         // Atributos
-        private Nodo cabeza;
+        private NodoPokemon cabeza;
         private int tamano;
 
         // Método constructor
@@ -28,7 +28,7 @@ namespace BatallaPokemon_juego
         // Método para agregar un nuevo nodo al final de la lista
         public void agregar(Pokemon valor)
         {
-            Nodo nuevo = new Nodo(valor); // Se crea un nuevo nodo
+            NodoPokemon nuevo = new NodoPokemon(valor); // Se crea un nuevo nodo
             if (estaVacia()) // Si la lista está vacía, el nuevo nodo será la cabeza
             {
                 cabeza = nuevo; // La cabeza apuntará al nuevo nodo
@@ -37,7 +37,7 @@ namespace BatallaPokemon_juego
             }
             else // Si la lista no está vacía
             {
-                Nodo aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+                NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
                 while (aux.getSiguiente() != cabeza) // Mientras el nodo auxiliar no sea el último nodo
                 {
                     aux = aux.getSiguiente(); // Se pasa al siguiente nodo
@@ -53,7 +53,7 @@ namespace BatallaPokemon_juego
         // Método para buscar un pokemon en la lista
         public Pokemon buscar(int numero)
         {
-            Nodo aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+            NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
             while (aux != null) // Mientras no se llegue al final de la lista 
             {
                 if (aux.getValor().getNumero() == numero) // Si el número del pokemon del nodo auxiliar es igual al número buscado
@@ -74,8 +74,8 @@ namespace BatallaPokemon_juego
         {
             if (cabeza != null) // En caso de que la lista no esté vacía 
             {
-                Nodo aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
-                Nodo ant = null; // Se crea un nodo auxiliar para guardar el nodo anterior
+                NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+                NodoPokemon ant = null; // Se crea un nodo auxiliar para guardar el nodo anterior
                 do // Bucle para recorrer la lista 
                 {
                     if (aux.getValor().getNumero() == numero) // Si el número del pokemon es igual al número del pokemon buscado 

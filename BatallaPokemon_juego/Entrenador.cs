@@ -69,5 +69,11 @@ namespace BatallaPokemon_juego
         {
             pokemones.eliminar(numero);
         }
+
+        // Método para mostrar la información del entrenador
+        public string mostrarInfo()
+        {
+            return nombre + "," + victorias;
+        }
     }
 }

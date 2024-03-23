@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace BatallaPokemon_juego
 {
-    public class Nodo
+    public class NodoPokemon
     {
         //Atributos
         private Pokemon valor;
-        private Nodo siguiente;
-        private Nodo anterior;
+        private NodoPokemon siguiente;
+        private NodoPokemon anterior;
 
         //Método constructor
-        public Nodo(Pokemon valor)
+        public NodoPokemon(Pokemon valor)
         {
             this.valor = valor;
             this.siguiente = null;
@@ -31,22 +31,22 @@ namespace BatallaPokemon_juego
             this.valor = valor;
         }
 
-        public Nodo getSiguiente()
+        public NodoPokemon getSiguiente()
         {
             return siguiente;
         }
 
-        public void setSiguiente(Nodo siguiente)
+        public void setSiguiente(NodoPokemon siguiente)
         {
             this.siguiente = siguiente;
         }
 
-        public Nodo getAnterior()
+        public NodoPokemon getAnterior()
         {
             return anterior;
         }
 
-        public void setAnterior(Nodo anterior)
+        public void setAnterior(NodoPokemon anterior)
         {
             this.anterior = anterior;
         }
