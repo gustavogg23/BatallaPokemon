@@ -76,6 +76,7 @@
     <Compile Include="NodoItem.cs" />
     <Compile Include="NodoJugador.cs" />
     <Compile Include="NodoPokemon.cs" />
+    <Compile Include="PilaItems.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

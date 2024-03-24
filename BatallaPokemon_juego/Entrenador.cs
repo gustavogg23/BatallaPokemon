@@ -12,6 +12,7 @@ namespace BatallaPokemon_juego
         private string nombre;
         private int victorias;
         private ListaCircularDE pokemones;
+        private ListaItems items;
 
         // Método constructor
         public Entrenador(string nombre)
@@ -19,6 +20,7 @@ namespace BatallaPokemon_juego
             this.nombre = nombre;
             this.victorias = 0;
             this.pokemones = new ListaCircularDE();
+            this.items = new ListaItems();
         }
 
         // Métodos Getters y Setters
@@ -52,6 +54,16 @@ namespace BatallaPokemon_juego
             this.pokemones = pokemones;
         }
 
+        public ListaItems getItems()
+        {
+            return items;
+        }
+
+        public void setItems(ListaItems items)
+        {
+            this.items = items;
+        }
+
         // Método para agregar un pokemon a la lista de pokemones del entrenador
         public void agregarPokemon(Pokemon pokemon)
         {
@@ -68,6 +80,24 @@ namespace BatallaPokemon_juego
         public void eliminarPokemon(int numero)
         {
             pokemones.eliminar(numero);
+        }
+
+        // Método para agregar un item a la lista de items del entrenador
+        public void agregarItem(PilaItems item)
+        {
+            items.agregar(item);
+        }
+
+        // Método para buscar un item en la lista de items del entrenador
+        public PilaItems buscarItem(PilaItems itemBuscado)
+        {
+            return items.buscar(itemBuscado);
+        }
+
+        // Método para eliminar un item de la lista de items del entrenador
+        public void eliminarItem(PilaItems itemAEliminar)
+        {
+            items.eliminar(itemAEliminar);
         }
 
         // Método para mostrar la información del entrenador
