@@ -18,6 +18,7 @@ namespace BatallaPokemon_juego
         {
             this.valor = valor;
             this.siguiente = null;
+            this.anterior = null;
         }
 
         //Métodos Getters y Setters

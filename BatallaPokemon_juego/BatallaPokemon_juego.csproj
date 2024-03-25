@@ -57,6 +57,7 @@
     <Compile Include="BarraCarga.Designer.cs">
       <DependentUpon>BarraCarga.cs</DependentUpon>
     </Compile>
+    <Compile Include="Batalla.cs" />
     <Compile Include="Entrenador.cs" />
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>

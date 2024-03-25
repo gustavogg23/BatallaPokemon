@@ -103,5 +103,11 @@ namespace BatallaPokemon_juego
                 } while (aux != cabeza); // Mientras el nodo actual no sea la cabeza
             }
         }
+
+        // Método para obtener la cabeza de la lista
+        public NodoPokemon getPrimero()
+        {
+            return cabeza;
+        }
     }
 }

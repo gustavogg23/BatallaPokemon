@@ -73,7 +73,7 @@ namespace BatallaPokemon_juego
                 else // Si el número del pokemon de la cabeza no es igual al número buscado
                 {
                     NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
-                    while (aux.getSiguiente() != null) // Mientras el nodo auxiliar no sea el último nodo
+                    while (aux.getSiguiente() != null && aux.getSiguiente().getValor().getNumero() != numero) // Mientras el nodo auxiliar no sea el último nodo
                     {
                         if (aux.getSiguiente().getValor().getNumero() == numero) // Si el número del pokemon del siguiente nodo es igual al número buscado
                         {
@@ -85,6 +85,12 @@ namespace BatallaPokemon_juego
                     }
                 }
             }
+        }
+
+        // Método para obtener el primer nodo de la lista
+        public NodoPokemon getPrimero()
+        {
+            return cabeza;
         }
     }
 }
