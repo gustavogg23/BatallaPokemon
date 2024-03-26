@@ -62,5 +62,18 @@ namespace BatallaPokemon_juego
                 return entrenador1;
             }
         }
+
+        // Método para cambiar turno
+        public void cambiarTurno()
+        {
+            if (turno == 1)
+            {
+                turno = 2;
+            }
+            else
+            {
+                turno = 1;
+            }
+        }
     }
 }

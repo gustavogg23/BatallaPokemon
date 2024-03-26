@@ -21,6 +21,7 @@ namespace BatallaPokemon_juego
         private int velocidad;
         private string imagenFrente;
         private string imagenEspalda;
+        private string imagen;
         private ListaAtaques ataques;
 
         // Método constructor
@@ -160,6 +161,16 @@ namespace BatallaPokemon_juego
         public void setImagenEspalda(string imagenEspalda)
         {
             this.imagenEspalda = imagenEspalda;
+        }
+
+        public string getImagen()
+        {
+            return imagen;
+        }
+
+        public void setImagen(string imagen)
+        {
+            this.imagen = imagen;
         }
 
         public ListaAtaques getAtaques()
