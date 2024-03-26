@@ -25,7 +25,7 @@ namespace BatallaPokemon_juego
         private ListaAtaques ataques;
 
         // Método constructor
-        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad, string imagenFrente, string imagenEspalda, ListaAtaques ataques)
+        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad, string imagenFrente, string imagenEspalda, string imagen, ListaAtaques ataques)
         {
             this.numero = numero;
             this.nombre = nombre;
@@ -39,6 +39,7 @@ namespace BatallaPokemon_juego
             this.velocidad = velocidad;
             this.imagenFrente = imagenFrente;
             this.imagenEspalda = imagenEspalda;
+            this.imagen = imagen;
             this.ataques = ataques;
         }
 
