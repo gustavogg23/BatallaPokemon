@@ -13,24 +13,28 @@ namespace BatallaPokemon_juego
 {
     public partial class BarraCarga : Form
     {
+        public event EventHandler CargaCompleta; //evento que permite indicar que la carga ha llegado al 100%
+
         private int incremento = 100;
         private int incrementoInicial = 0;
-        private SoundPlayer player = new SoundPlayer(Properties.Resources.WhatsApp_Video_2024_03_17_at_3_45_50_PM); 
-        
+        private SoundPlayer player = new SoundPlayer(Properties.Resources.WhatsApp_Video_2024_03_17_at_3_45_50_PM);
+
         public BarraCarga()
         {
             InitializeComponent();
+            Load += BarraCarga_Load;
+        }
+
+        private void BarraCarga_Load(object sender, EventArgs e)
+        {
             IniciarCarga();
-            DatosUsuario();
         }
 
         private void IniciarCarga()
         {
             player.Play(); //para iniciar la reproduccion
-
             Timer timer = new Timer();
             timer.Interval = 100; //Intervalo de actualizacion de la barra
-
             timer.Tick += (s, e) =>
             {
                 if (incrementoInicial < incremento)
@@ -42,7 +46,9 @@ namespace BatallaPokemon_juego
                 {
                     player.Stop();//para detener la reproduccion al cerrar el formulario
                     timer.Stop();
-                    this.Close(); //Para cerrar la ventana luego de terminar la carga
+
+                    CargaCompleta?.Invoke(this, EventArgs.Empty); //para llamar el evento de carga completa
+                    Close(); //para cerrar la ventana de carga
                 }
             };
             timer.Start();
@@ -54,26 +60,6 @@ namespace BatallaPokemon_juego
 
             progressBar1.Value = incrementoInicial; //para actualizar la barra de carga y el label que muestra el porcentaje
             label1.Text = $"Cargando...{porcentaje}%";
-        }
-
-        private void DatosUsuario()
-        {
-            using (Form inputForm = new Form())
-            {
-                inputForm.Text = "Registro Usuario"; inputForm.Size = new Size(300, 250);
-                Label labelUsername = new Label();
-                labelUsername.Text = "Nombre:"; labelUsername.Location = new Point(10, 10);
-
-                TextBox textBoxUsername = new TextBox(); textBoxUsername.Location = new Point(labelUsername.Right + 10, 10);
-
-                Button buttonGuardar = new Button(); buttonGuardar.Text = "Guardar";
-                buttonGuardar.Location = new Point(inputForm.Width / 2 - 50, textBoxUsername.Bottom + 20); buttonGuardar.Click += (sender, e) =>
-                {
-                    string Username = textBoxUsername.Text;
-                    MessageBox.Show("Alumno registrado exitosamente");
-                    inputForm.Close();
-                };
-            }
         }
     }
 }
