@@ -116,10 +116,15 @@ namespace BatallaPokemon_juego
         private void CargarJugadores()
         {
             Archivo archivo = new Archivo("Jugadores.txt");
-            string[] lineas = archivo.Leer(); 
+            string[] lineas = archivo.Leer();
             foreach (string linea in lineas)
             {
                 string[] datos = linea.Split(',');
+                if (datos.Length != 2) // Se verifica que la línea tenga el formato correcto
+                {
+                    Console.WriteLine($"Error: la línea '{linea}' no tiene el formato correcto."); // Se muestra un mensaje de error
+                    continue; // Se salta a la siguiente iteración del ciclo
+                }
                 Entrenador entrenador = new Entrenador(datos[0], int.Parse(datos[1])); // Se crea un objeto de la clase Entrenador con los datos de la línea
                 DatosListas.listaJugadores.agregar(entrenador); // Se agrega el entrenador a la lista de jugadores
             }

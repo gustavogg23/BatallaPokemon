@@ -87,25 +87,30 @@ namespace BatallaPokemon_juego
             }
 
             // Se verifica que los jugadores estén registrados
-            if (!JugadorYaRegistrado(username1, username2))
+            if (!JugadorNoRegistrado(username1, username2))
             {
+                MessageBox.Show("Uno o ambos jugadores no están registrados");
                 return;
             }
 
             // Si se cumplen todas las validaciones, se guarda el nombre de usuario en una variable global
             DatosJugadores.player1 = BarraCarga.DatosListas.listaJugadores.buscar(username1);
             DatosJugadores.player2 = BarraCarga.DatosListas.listaJugadores.buscar(username2);
+
+            // Se abre la ventana de selección de pokemones
+            SelectorPokemon seleccionPokemon = new SelectorPokemon();
+            seleccionPokemon.Show();
         }
 
         private bool IsValidusername1(string username1) //Metodo para validar que el usuario 1 pueda usar solo letras y numeros
         {
-            string pattern = @"^[a-zA-Z0-9]{8,12}$";
+            string pattern = @"^[a-zA-Z0-9]{4,12}$";
             return Regex.IsMatch(username1, pattern);
         }
 
         private bool IsValidusername2(string username2) //Metodo para validar que el usuario 2 pueda usar solo letras y numeros
         {
-            string pattern = @"^[a-zA-Z0-9]{8,12}$";
+            string pattern = @"^[a-zA-Z0-9]{4,12}$";
             return Regex.IsMatch(username2, pattern);
         }
 
@@ -118,7 +123,7 @@ namespace BatallaPokemon_juego
             BarraCarga.DatosListas.listaJugadores.agregar(jugador2); // Se agrega el jugador 2 a la lista de jugadores
 
             Archivo archivo = new Archivo("Jugadores.txt"); // Se crea un nuevo objeto archivo
-            string texto = jugador1.mostrarInfo() + "\n" + jugador2.mostrarInfo() + "\n"; // Se crea un string con la información de los jugadores
+            string texto = jugador1.mostrarInfo() + "\n" + jugador2.mostrarInfo(); // Se crea un string con la información de los jugadores
             archivo.Escribir(texto); // Se escribe el string en el archivo
         }
 
@@ -148,8 +153,9 @@ namespace BatallaPokemon_juego
             }
 
             // Se verifica que los jugadores no estén registrados
-            if (!JugadorYaRegistrado(username1, username2))
+            if (JugadorYaRegistrado(username1, username2))
             {
+                MessageBox.Show("Uno o ambos jugadores ya están registrados");
                 return;
             }
 
@@ -178,13 +184,26 @@ namespace BatallaPokemon_juego
             return true;
         }
 
-        private Boolean JugadorYaRegistrado(string username1, string username2) //Metodo para validar que los jugadores no esten registrados
+        private Boolean JugadorYaRegistrado(string username1, string username2) //Metodo para verificar los jugadores esten registrados
         {
             ListaJugadores jugadores = BarraCarga.DatosListas.listaJugadores; // Se obtiene la lista de jugadores
 
             if (jugadores.existe(username1) || jugadores.existe(username2)) // Si el jugador 1 o el jugador 2 ya están registrados
             {
-                MessageBox.Show("Uno o ambos jugadores ya están registrados");
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private Boolean JugadorNoRegistrado(string username1, string username2) //Metodo para validar que los jugadores no esten registrados
+        {
+            ListaJugadores jugadores = BarraCarga.DatosListas.listaJugadores; // Se obtiene la lista de jugadores
+
+            if (jugadores.existe(username1) && jugadores.existe(username2)) // Si el jugador 1 o el jugador 2 no están registrados
+            {
                 return true;
             }
             else
