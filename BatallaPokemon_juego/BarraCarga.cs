@@ -13,6 +13,7 @@ namespace BatallaPokemon_juego
 {
     public partial class BarraCarga : Form
     {
+        // Con esta clase se puede acceder a las listas que se creen desde cualquier parte del programa
         public static class DatosListas
         {
             public static ListaAtaques listaAtaques = new ListaAtaques();
@@ -39,6 +40,10 @@ namespace BatallaPokemon_juego
         private void IniciarCarga()
         {
             player.Play(); //para iniciar la reproduccion
+
+            CargarAtaques();
+            CargarPokemones();
+
             Timer timer = new Timer();
             timer.Interval = 100; //Intervalo de actualizacion de la barra
             timer.Tick += (s, e) =>
@@ -87,12 +92,17 @@ namespace BatallaPokemon_juego
             foreach (string linea in lineas)
             {
                 string[] datos = linea.Split(',');
+                if (datos.Length < 17)
+                {
+                    Console.WriteLine($"Error: la línea '{linea}' no tiene el formato correcto.");
+                    continue;
+                }
                 Ataque[] ataques = new Ataque[4];
                 for (int i = 0; i < 4; i++)
                 {
                     ataques[i] = DatosListas.listaAtaques.buscar(datos[13 + i]);
                 }
-                Pokemon pokemon = new Pokemon(int.Parse(datos[0]), datos[1], datos[2], datos[3], int.Parse(datos[4]), int.Parse(datos[5]), int.Parse(datos[6]), int.Parse(datos[11]), int.Parse(datos[12]), int.Parse(datos[13]), datos[8], datos[9], datos[10], ataques);
+                Pokemon pokemon = new Pokemon(int.Parse(datos[0]), datos[1], datos[2], datos[3], int.Parse(datos[4]), int.Parse(datos[5]), int.Parse(datos[6]), int.Parse(datos[7]), int.Parse(datos[8]), int.Parse(datos[9]), datos[10], datos[11], datos[12], ataques);
                 DatosListas.listaPokemones.agregar(pokemon);
             }
         }
