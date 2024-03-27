@@ -18,6 +18,7 @@ namespace BatallaPokemon_juego
         {
             public static ListaAtaques listaAtaques = new ListaAtaques();
             public static ListaPokemones listaPokemones = new ListaPokemones();
+            public static ListaJugadores listaJugadores = new ListaJugadores();
         }
 
         public event EventHandler CargaCompleta; //evento que permite indicar que la carga ha llegado al 100%
@@ -41,8 +42,10 @@ namespace BatallaPokemon_juego
         {
             player.Play(); //para iniciar la reproduccion
 
+            // Se cargan los ataques, pokemones y jugadores
             CargarAtaques();
             CargarPokemones();
+            CargarJugadores();
 
             Timer timer = new Timer();
             timer.Interval = 100; //Intervalo de actualizacion de la barra
@@ -73,37 +76,52 @@ namespace BatallaPokemon_juego
             label1.Text = $"Cargando...{porcentaje}%";
         }
 
+        // Método para cargar los ataques desde el archivo Ataques.txt
         private void CargarAtaques()
         {
-            Archivo archivo = new Archivo("Ataques.txt");
-            string[] lineas = archivo.Leer();
+            Archivo archivo = new Archivo("Ataques.txt"); // Se crea un objeto de la clase Archivo
+            string[] lineas = archivo.Leer(); // Se lee el archivo y se guarda en un arreglo de strings
+            foreach (string linea in lineas) // Se recorre el arreglo de strings
+            {
+                string[] datos = linea.Split(','); // Se separan los datos de la línea por comas
+                Ataque ataque = new Ataque(datos[0], datos[1], datos[2]); // Se crea un objeto de la clase Ataque con los datos de la línea
+                DatosListas.listaAtaques.agregar(ataque); // Se agrega el ataque a la lista de ataques
+            } 
+        }
+
+        // Método para cargar los pokemones desde el archivo Pokemones.txt
+        private void CargarPokemones()
+        {
+            Archivo archivo = new Archivo("Pokemones.txt"); 
+            string[] lineas = archivo.Leer(); 
             foreach (string linea in lineas)
             {
                 string[] datos = linea.Split(',');
-                Ataque ataque = new Ataque(datos[0], datos[1], datos[2]);
-                DatosListas.listaAtaques.agregar(ataque);
+                if (datos.Length < 17) // Se verifica que la línea tenga el formato correcto
+                {
+                    Console.WriteLine($"Error: la línea '{linea}' no tiene el formato correcto."); // Se muestra un mensaje de error
+                    continue; // Se salta a la siguiente iteración del ciclo
+                }
+                Ataque[] ataques = new Ataque[4]; // Se crea un arreglo de ataques
+                for (int i = 0; i < 4; i++) // Se recorren los ataques
+                {
+                    ataques[i] = DatosListas.listaAtaques.buscar(datos[13 + i]); // Se busca el ataque en la lista de ataques y se guarda en el arreglo
+                } 
+                Pokemon pokemon = new Pokemon(int.Parse(datos[0]), datos[1], datos[2], datos[3], int.Parse(datos[4]), int.Parse(datos[5]), int.Parse(datos[6]), int.Parse(datos[7]), int.Parse(datos[8]), int.Parse(datos[9]), datos[10], datos[11], datos[12], ataques); // Se crea un objeto de la clase Pokemon con los datos de la línea
+                DatosListas.listaPokemones.agregar(pokemon); // Se agrega el pokemon a la lista de pokemones
             }
         }
 
-        private void CargarPokemones()
+        // Método para cargar los jugadores desde el archivo Jugadores.txt
+        private void CargarJugadores()
         {
-            Archivo archivo = new Archivo("Pokemones.txt");
-            string[] lineas = archivo.Leer();
+            Archivo archivo = new Archivo("Jugadores.txt");
+            string[] lineas = archivo.Leer(); 
             foreach (string linea in lineas)
             {
                 string[] datos = linea.Split(',');
-                if (datos.Length < 17)
-                {
-                    Console.WriteLine($"Error: la línea '{linea}' no tiene el formato correcto.");
-                    continue;
-                }
-                Ataque[] ataques = new Ataque[4];
-                for (int i = 0; i < 4; i++)
-                {
-                    ataques[i] = DatosListas.listaAtaques.buscar(datos[13 + i]);
-                }
-                Pokemon pokemon = new Pokemon(int.Parse(datos[0]), datos[1], datos[2], datos[3], int.Parse(datos[4]), int.Parse(datos[5]), int.Parse(datos[6]), int.Parse(datos[7]), int.Parse(datos[8]), int.Parse(datos[9]), datos[10], datos[11], datos[12], ataques);
-                DatosListas.listaPokemones.agregar(pokemon);
+                Entrenador entrenador = new Entrenador(datos[0], int.Parse(datos[1])); // Se crea un objeto de la clase Entrenador con los datos de la línea
+                DatosListas.listaJugadores.agregar(entrenador); // Se agrega el entrenador a la lista de jugadores
             }
         }
     }

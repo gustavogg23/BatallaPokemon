@@ -45,5 +45,35 @@ namespace BatallaPokemon_juego
             }
             tamano++; // Se aumenta el tamaño de la lista
         }
+
+        // Método para verificar si un jugador ya existe en la lista
+        public bool existe(string nombre)
+        {
+            NodoJugador aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+            while (aux != null) // Mientras el nodo auxiliar no sea nulo
+            {
+                if (aux.getValor().getNombre() == nombre) // Si el nombre del jugador es igual al nombre buscado
+                {
+                    return true; // Se retorna verdadero
+                }
+                aux = aux.getSiguiente(); // Se pasa al siguiente nodo
+            }
+            return false; // Si no se encuentra el jugador, se retorna falso
+        }
+
+        // Método para buscar un jugador en la lista
+        public Entrenador buscar(string nombre)
+        {
+            NodoJugador aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+            while (aux != null) // Mientras el nodo auxiliar no sea nulo
+            {
+                if (aux.getValor().getNombre() == nombre) // Si el nombre del jugador es igual al nombre buscado
+                {
+                    return aux.getValor(); // Se retorna el jugador
+                }
+                aux = aux.getSiguiente(); // Se pasa al siguiente nodo
+            }
+            return null; // Si no se encuentra el jugador, se retorna nulo
+        }
     }
 }

@@ -15,10 +15,10 @@ namespace BatallaPokemon_juego
         private ListaItems items;
 
         // Método constructor
-        public Entrenador(string nombre)
+        public Entrenador(string nombre, int victorias)
         {
             this.nombre = nombre;
-            this.victorias = 0;
+            this.victorias = victorias;
             this.pokemones = new ListaCircularDE();
             this.items = new ListaItems();
         }
