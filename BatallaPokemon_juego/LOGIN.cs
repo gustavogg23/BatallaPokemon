@@ -15,6 +15,11 @@ namespace BatallaPokemon_juego
 {
     public partial class LOGIN : Form
     {
+        public static class DatosJugadores // Clase para guardar los datos de los jugadores y poder acceder a ellos desde cualquier parte del programa
+        {
+            public static Entrenador player1;
+            public static Entrenador player2;
+        }
         public LOGIN()
         {
             InitializeComponent();
@@ -57,16 +62,39 @@ namespace BatallaPokemon_juego
             }
         }
 
-        private void acceder_Click(object sender, EventArgs e) //validaciones de correo y contraseña al hacer click en "ACCEDER" 
+        private void acceder_Click(object sender, EventArgs e) //validaciones de nombre de usuario al hacer click en "ACCEDER" 
         {
             string username1 = jugador1.Text;
             string username2 = jugador2.Text;
 
-            if (IsValidusername1(username1) && IsValidusername2(username2))
+            // Se verifican que los campos estén llenos
+            if (!ValidarCampos())
             {
-                GuardarDatos_Jugadores(username1, username2);
-                MessageBox.Show("Los Datos han sido guardados exitosamente");
+                return;
             }
+
+            // Se verifica que ambos jugadores sean diferentes
+            if (!ValidarJugadores())
+            {
+                return;
+            }
+
+            // Se verifica que los nombres de usuario sean válidos
+            if (!IsValidusername1(username1) || !IsValidusername2(username2))
+            {
+                MessageBox.Show("Los nombres de usuario deben tener entre 8 y 12 caracteres y solo pueden contener letras y números");
+                return;
+            }
+
+            // Se verifica que los jugadores estén registrados
+            if (!JugadorYaRegistrado(username1, username2))
+            {
+                return;
+            }
+
+            // Si se cumplen todas las validaciones, se guarda el nombre de usuario en una variable global
+            DatosJugadores.player1 = BarraCarga.DatosListas.listaJugadores.buscar(username1);
+            DatosJugadores.player2 = BarraCarga.DatosListas.listaJugadores.buscar(username2);
         }
 
         private bool IsValidusername1(string username1) //Metodo para validar que el usuario 1 pueda usar solo letras y numeros
@@ -83,11 +111,85 @@ namespace BatallaPokemon_juego
 
         private void GuardarDatos_Jugadores(string username1, string username2) //Metodo para guardar los datos en un archivo de texto
         {
-            using (StreamWriter sw = new StreamWriter("Datos_Jugadores.txt", true))
+            Entrenador jugador1 = new Entrenador(username1, 0); // Se crea un nuevo entrenador con el nombre del jugador 1
+            Entrenador jugador2 = new Entrenador(username2, 0); // Se crea un nuevo entrenador con el nombre del jugador 2
+
+            BarraCarga.DatosListas.listaJugadores.agregar(jugador1); // Se agrega el jugador 1 a la lista de jugadores
+            BarraCarga.DatosListas.listaJugadores.agregar(jugador2); // Se agrega el jugador 2 a la lista de jugadores
+
+            Archivo archivo = new Archivo("Jugadores.txt"); // Se crea un nuevo objeto archivo
+            string texto = jugador1.mostrarInfo() + "\n" + jugador2.mostrarInfo() + "\n"; // Se crea un string con la información de los jugadores
+            archivo.Escribir(texto); // Se escribe el string en el archivo
+        }
+
+        private void registro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Se obtienen los nombres de usuario
+            string username1 = jugador1.Text;
+            string username2 = jugador2.Text;
+
+            // Se verifican que los campos estén llenos
+            if (!ValidarCampos())
             {
-                sw.WriteLine($"JUGADOR 1: {username1}");
-                sw.WriteLine($"JUGADOR 2: {username2}");
-                sw.WriteLine();
+                return;
+            }
+
+            // Se verifica que ambos jugadores sean diferentes
+            if (!ValidarJugadores())
+            {
+                return;
+            }
+
+            // Se verifica que los nombres de usuario sean válidos
+            if (!IsValidusername1(username1) || !IsValidusername2(username2))
+            {
+                MessageBox.Show("Los nombres de usuario deben tener entre 8 y 12 caracteres y solo pueden contener letras y números");
+                return;
+            }
+
+            // Se verifica que los jugadores no estén registrados
+            if (!JugadorYaRegistrado(username1, username2))
+            {
+                return;
+            }
+
+            // Si se cumplen todas las validaciones, se guardan los datos de los jugadores
+            GuardarDatos_Jugadores(username1, username2);
+            MessageBox.Show("Los jugadores han sido registrados exitosamente");
+        }
+
+        private Boolean ValidarCampos() //Metodo para validar que los campos no esten vacios
+        {
+            if (jugador1.Text == "JUGADOR 1" || jugador2.Text == "JUGADOR 2")
+            {
+                MessageBox.Show("Por favor, llene todos los campos");
+                return false;
+            }
+            return true;
+        }
+
+        private Boolean ValidarJugadores() //Metodo para validar que los jugadores no sean iguales
+        {
+            if (jugador1.Text == jugador2.Text)
+            {
+                MessageBox.Show("Los jugadores no pueden ser iguales");
+                return false;
+            }
+            return true;
+        }
+
+        private Boolean JugadorYaRegistrado(string username1, string username2) //Metodo para validar que los jugadores no esten registrados
+        {
+            ListaJugadores jugadores = BarraCarga.DatosListas.listaJugadores; // Se obtiene la lista de jugadores
+
+            if (jugadores.existe(username1) || jugadores.existe(username2)) // Si el jugador 1 o el jugador 2 ya están registrados
+            {
+                MessageBox.Show("Uno o ambos jugadores ya están registrados");
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

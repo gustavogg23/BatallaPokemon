@@ -141,6 +141,7 @@
             this.registro.TabIndex = 6;
             this.registro.TabStop = true;
             this.registro.Text = "REGISTRARSE";
+            this.registro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.registro_LinkClicked);
             // 
             // LOGIN
             // 
