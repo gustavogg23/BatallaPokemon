@@ -32,7 +32,10 @@ namespace BatallaPokemon_juego
         }
         private void iniciar_Click(object sender, EventArgs e)
         {
+            this.Visible = false; //para ocultar el formulario 
 
+            LOGIN loginForm = new LOGIN();
+            loginForm.ShowDialog();
         }
     }
 }

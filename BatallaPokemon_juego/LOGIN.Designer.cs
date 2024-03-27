@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LOGIN));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.jugador1 = new System.Windows.Forms.TextBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.jugador2 = new System.Windows.Forms.TextBox();
             this.acceder = new System.Windows.Forms.Button();
             this.registro = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,17 +62,19 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "LOGIN";
             // 
-            // textBox1
+            // jugador1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Lavender;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(372, 192);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 16);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "JUGADOR 1";
+            this.jugador1.BackColor = System.Drawing.Color.Lavender;
+            this.jugador1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.jugador1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jugador1.ForeColor = System.Drawing.Color.DimGray;
+            this.jugador1.Location = new System.Drawing.Point(372, 192);
+            this.jugador1.Name = "jugador1";
+            this.jugador1.Size = new System.Drawing.Size(245, 16);
+            this.jugador1.TabIndex = 2;
+            this.jugador1.Text = "JUGADOR 1";
+            this.jugador1.Enter += new System.EventHandler(this.jugador1_Enter);
+            this.jugador1.Leave += new System.EventHandler(this.jugador1_Leave);
             // 
             // shapeContainer1
             // 
@@ -86,14 +88,6 @@
             this.shapeContainer1.TabIndex = 3;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
-            // 
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 373;
-            this.lineShape1.X2 = 616;
-            this.lineShape1.Y1 = 211;
-            this.lineShape1.Y2 = 211;
-            // 
             // lineShape2
             // 
             this.lineShape2.Name = "lineShape2";
@@ -102,17 +96,27 @@
             this.lineShape2.Y1 = 290;
             this.lineShape2.Y2 = 290;
             // 
-            // textBox2
+            // lineShape1
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Lavender;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox2.Location = new System.Drawing.Point(373, 270);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 16);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "JUGADOR 2";
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 373;
+            this.lineShape1.X2 = 616;
+            this.lineShape1.Y1 = 211;
+            this.lineShape1.Y2 = 211;
+            // 
+            // jugador2
+            // 
+            this.jugador2.BackColor = System.Drawing.Color.Lavender;
+            this.jugador2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.jugador2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jugador2.ForeColor = System.Drawing.Color.DimGray;
+            this.jugador2.Location = new System.Drawing.Point(373, 270);
+            this.jugador2.Name = "jugador2";
+            this.jugador2.Size = new System.Drawing.Size(244, 16);
+            this.jugador2.TabIndex = 4;
+            this.jugador2.Text = "JUGADOR 2";
+            this.jugador2.Enter += new System.EventHandler(this.jugador2_Enter);
+            this.jugador2.Leave += new System.EventHandler(this.jugador2_Leave);
             // 
             // acceder
             // 
@@ -123,6 +127,7 @@
             this.acceder.TabIndex = 5;
             this.acceder.Text = "ACCEDER";
             this.acceder.UseVisualStyleBackColor = true;
+            this.acceder.Click += new System.EventHandler(this.acceder_Click);
             // 
             // registro
             // 
@@ -145,8 +150,8 @@
             this.ClientSize = new System.Drawing.Size(634, 611);
             this.Controls.Add(this.registro);
             this.Controls.Add(this.acceder);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.jugador2);
+            this.Controls.Add(this.jugador1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.shapeContainer1);
@@ -164,11 +169,11 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox jugador1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape2;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox jugador2;
         private System.Windows.Forms.Button acceder;
         private System.Windows.Forms.LinkLabel registro;
     }

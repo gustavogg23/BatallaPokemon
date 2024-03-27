@@ -71,7 +71,6 @@
     <Compile Include="Item.cs" />
     <Compile Include="ListaAtaques.cs" />
     <Compile Include="ListaCircularDE.cs" />
-    <Compile Include="ListaImagenes.cs" />
     <Compile Include="ListaItems.cs" />
     <Compile Include="ListaJugadores.cs" />
     <Compile Include="ListaPokemones.cs" />
@@ -82,7 +81,6 @@
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
     <Compile Include="NodoAtaque.cs" />
-    <Compile Include="NodoImagen.cs" />
     <Compile Include="NodoItem.cs" />
     <Compile Include="NodoJugador.cs" />
     <Compile Include="NodoPokemon.cs" />

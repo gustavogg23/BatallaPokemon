@@ -22,10 +22,10 @@ namespace BatallaPokemon_juego
         private string imagenFrente;
         private string imagenEspalda;
         private string imagen;
-        private ListaAtaques ataques;
+        private Ataque[] ataques = new Ataque[4];
 
         // Método constructor
-        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad, string imagenFrente, string imagenEspalda, string imagen, ListaAtaques ataques)
+        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad, string imagenFrente, string imagenEspalda, string imagen, Ataque[] ataques)
         {
             this.numero = numero;
             this.nombre = nombre;
@@ -174,12 +174,12 @@ namespace BatallaPokemon_juego
             this.imagen = imagen;
         }
 
-        public ListaAtaques getAtaques()
+        public Ataque[] getAtaques()
         {
             return ataques;
         }
 
-        public void setAtaques(ListaAtaques ataques)
+        public void setAtaques(Ataque[] ataques)
         {
             this.ataques = ataques;
         }

@@ -11,14 +11,14 @@ namespace BatallaPokemon_juego
         // Atributos
         private string nombre;
         private string tipo;
-        private ListaImagenes imagenes;
+        private string imagen;
 
         // Método constructor
-        public Ataque(string nombre, string tipo, ListaImagenes imagenes)
+        public Ataque(string nombre, string tipo, string imagen)
         {
             this.nombre = nombre;
             this.tipo = tipo;
-            this.imagenes = imagenes;
+            this.imagen = imagen; ;
         }
 
         // Métodos Getters y Setters
@@ -42,14 +42,14 @@ namespace BatallaPokemon_juego
             this.tipo = tipo;
         }
 
-        public ListaImagenes getImagenes()
+        public string getImagen()
         {
-            return imagenes;
+            return imagen;
         }
 
-        public void setImagenes(ListaImagenes imagenes)
+        public void setImagen(string imagen)
         {
-            this.imagenes = imagenes;
+            this.imagen = imagen;
         }
     }
 }
