@@ -13,6 +13,12 @@ namespace BatallaPokemon_juego
 {
     public partial class BarraCarga : Form
     {
+        public static class DatosListas
+        {
+            public static ListaAtaques listaAtaques = new ListaAtaques();
+            public static ListaPokemones listaPokemones = new ListaPokemones();
+        }
+
         public event EventHandler CargaCompleta; //evento que permite indicar que la carga ha llegado al 100%
 
         private int incremento = 100;
@@ -60,6 +66,35 @@ namespace BatallaPokemon_juego
 
             progressBar1.Value = incrementoInicial; //para actualizar la barra de carga y el label que muestra el porcentaje
             label1.Text = $"Cargando...{porcentaje}%";
+        }
+
+        private void CargarAtaques()
+        {
+            Archivo archivo = new Archivo("Ataques.txt");
+            string[] lineas = archivo.Leer();
+            foreach (string linea in lineas)
+            {
+                string[] datos = linea.Split(',');
+                Ataque ataque = new Ataque(datos[0], datos[1], datos[2]);
+                DatosListas.listaAtaques.agregar(ataque);
+            }
+        }
+
+        private void CargarPokemones()
+        {
+            Archivo archivo = new Archivo("Pokemones.txt");
+            string[] lineas = archivo.Leer();
+            foreach (string linea in lineas)
+            {
+                string[] datos = linea.Split(',');
+                Ataque[] ataques = new Ataque[4];
+                for (int i = 0; i < 4; i++)
+                {
+                    ataques[i] = DatosListas.listaAtaques.buscar(datos[13 + i]);
+                }
+                Pokemon pokemon = new Pokemon(int.Parse(datos[0]), datos[1], datos[2], datos[3], int.Parse(datos[4]), int.Parse(datos[5]), int.Parse(datos[6]), int.Parse(datos[11]), int.Parse(datos[12]), int.Parse(datos[13]), datos[8], datos[9], datos[10], ataques);
+                DatosListas.listaPokemones.agregar(pokemon);
+            }
         }
     }
 }
