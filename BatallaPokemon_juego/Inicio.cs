@@ -37,5 +37,15 @@ namespace BatallaPokemon_juego
             LOGIN loginForm = new LOGIN();
             loginForm.ShowDialog();
         }
+
+        private void salir_Click(object sender, EventArgs e) //metodo para darle funcion al boton de la "X"
+        {
+            Application.Exit();
+        }
+
+        private void minimizar_Click(object sender, EventArgs e) //metodo para darle funcion de minimizar al boton de "-"
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

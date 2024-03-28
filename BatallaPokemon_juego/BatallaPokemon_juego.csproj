@@ -61,7 +61,19 @@
       <DependentUpon>BarraCarga.cs</DependentUpon>
     </Compile>
     <Compile Include="Batalla.cs" />
+    <Compile Include="BC_BATALLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BC_BATALLA.Designer.cs">
+      <DependentUpon>BC_BATALLA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entrenador.cs" />
+    <Compile Include="Form_BATALLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BATALLA.Designer.cs">
+      <DependentUpon>Form_BATALLA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +109,12 @@
     <EmbeddedResource Include="BarraCarga.resx">
       <DependentUpon>BarraCarga.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BC_BATALLA.resx">
+      <DependentUpon>BC_BATALLA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BATALLA.resx">
+      <DependentUpon>Form_BATALLA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +131,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SelectorPokemon.resx">
+      <DependentUpon>SelectorPokemon.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -620,6 +641,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\zubat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrarSesion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBatalla7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifPokemon2.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

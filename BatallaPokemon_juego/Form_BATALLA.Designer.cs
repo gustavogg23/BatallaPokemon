@@ -1,6 +1,6 @@
 ﻿namespace BatallaPokemon_juego
 {
-    partial class SelectorPokemon
+    partial class Form_BATALLA
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@
         {
             this.cerrar = new System.Windows.Forms.PictureBox();
             this.minimizar = new System.Windows.Forms.PictureBox();
-            this.aceptar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizar)).BeginInit();
             this.SuspendLayout();
@@ -39,7 +38,7 @@
             // 
             this.cerrar.BackColor = System.Drawing.Color.Transparent;
             this.cerrar.Image = global::BatallaPokemon_juego.Properties.Resources.salir;
-            this.cerrar.Location = new System.Drawing.Point(758, 12);
+            this.cerrar.Location = new System.Drawing.Point(1221, 12);
             this.cerrar.Name = "cerrar";
             this.cerrar.Size = new System.Drawing.Size(30, 30);
             this.cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -51,7 +50,7 @@
             // 
             this.minimizar.BackColor = System.Drawing.Color.Transparent;
             this.minimizar.Image = global::BatallaPokemon_juego.Properties.Resources.Minimizar;
-            this.minimizar.Location = new System.Drawing.Point(716, 12);
+            this.minimizar.Location = new System.Drawing.Point(1170, 12);
             this.minimizar.Name = "minimizar";
             this.minimizar.Size = new System.Drawing.Size(30, 30);
             this.minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -59,31 +58,19 @@
             this.minimizar.TabStop = false;
             this.minimizar.Click += new System.EventHandler(this.minimizar_Click);
             // 
-            // aceptar
-            // 
-            this.aceptar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aceptar.Location = new System.Drawing.Point(648, 401);
-            this.aceptar.Name = "aceptar";
-            this.aceptar.Size = new System.Drawing.Size(140, 37);
-            this.aceptar.TabIndex = 2;
-            this.aceptar.Text = "ACEPTAR";
-            this.aceptar.UseVisualStyleBackColor = true;
-            this.aceptar.Click += new System.EventHandler(this.aceptar_Click);
-            // 
-            // SelectorPokemon
+            // Form_BATALLA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.aceptar);
+            this.ClientSize = new System.Drawing.Size(1263, 652);
             this.Controls.Add(this.minimizar);
             this.Controls.Add(this.cerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
-            this.Name = "SelectorPokemon";
+            this.Name = "Form_BATALLA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SelectorPokemon";
+            this.Text = "Form_BATALLA";
+            this.Load += new System.EventHandler(this.Form_BATALLA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizar)).EndInit();
             this.ResumeLayout(false);
@@ -94,6 +81,5 @@
 
         private System.Windows.Forms.PictureBox cerrar;
         private System.Windows.Forms.PictureBox minimizar;
-        private System.Windows.Forms.Button aceptar;
     }
 }

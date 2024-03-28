@@ -32,6 +32,10 @@
             this.iniciar = new System.Windows.Forms.Button();
             this.torneoBoton = new System.Windows.Forms.Button();
             this.rankingBoton = new System.Windows.Forms.Button();
+            this.salir = new System.Windows.Forms.PictureBox();
+            this.minimizar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.salir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizar)).BeginInit();
             this.SuspendLayout();
             // 
             // iniciar
@@ -83,20 +87,49 @@
             this.rankingBoton.TabIndex = 2;
             this.rankingBoton.UseVisualStyleBackColor = false;
             // 
+            // salir
+            // 
+            this.salir.BackColor = System.Drawing.Color.Transparent;
+            this.salir.Image = global::BatallaPokemon_juego.Properties.Resources.salir;
+            this.salir.Location = new System.Drawing.Point(1243, 13);
+            this.salir.Name = "salir";
+            this.salir.Size = new System.Drawing.Size(30, 30);
+            this.salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.salir.TabIndex = 3;
+            this.salir.TabStop = false;
+            this.salir.Click += new System.EventHandler(this.salir_Click);
+            // 
+            // minimizar
+            // 
+            this.minimizar.BackColor = System.Drawing.Color.Transparent;
+            this.minimizar.Image = global::BatallaPokemon_juego.Properties.Resources.Minimizar;
+            this.minimizar.Location = new System.Drawing.Point(1198, 13);
+            this.minimizar.Name = "minimizar";
+            this.minimizar.Size = new System.Drawing.Size(30, 30);
+            this.minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.minimizar.TabIndex = 4;
+            this.minimizar.TabStop = false;
+            this.minimizar.Click += new System.EventHandler(this.minimizar_Click);
+            // 
             // inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.Fondo_inicio;
             this.ClientSize = new System.Drawing.Size(1279, 691);
+            this.Controls.Add(this.minimizar);
+            this.Controls.Add(this.salir);
             this.Controls.Add(this.rankingBoton);
             this.Controls.Add(this.torneoBoton);
             this.Controls.Add(this.iniciar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            ((System.ComponentModel.ISupportInitialize)(this.salir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -106,6 +139,8 @@
         private System.Windows.Forms.Button iniciar;
         private System.Windows.Forms.Button torneoBoton;
         private System.Windows.Forms.Button rankingBoton;
+        private System.Windows.Forms.PictureBox salir;
+        private System.Windows.Forms.PictureBox minimizar;
     }
 }
 

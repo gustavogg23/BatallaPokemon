@@ -129,5 +129,15 @@ namespace BatallaPokemon_juego
                 DatosListas.listaJugadores.agregar(entrenador); // Se agrega el entrenador a la lista de jugadores
             }
         }
+
+        private void cerrar_Click(object sender, EventArgs e) //metodo para darle funcion al boton de la "X"
+        {
+            Application.Exit();
+        }
+
+        private void minimizar_Click(object sender, EventArgs e) //metodo para darle funcion de minimizar al boton de "-"
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

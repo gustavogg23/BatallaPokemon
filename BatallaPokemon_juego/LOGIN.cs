@@ -97,9 +97,10 @@ namespace BatallaPokemon_juego
             DatosJugadores.player1 = BarraCarga.DatosListas.listaJugadores.buscar(username1);
             DatosJugadores.player2 = BarraCarga.DatosListas.listaJugadores.buscar(username2);
 
-            // Se abre la ventana de selección de pokemones
-            SelectorPokemon seleccionPokemon = new SelectorPokemon();
-            seleccionPokemon.Show();
+            this.Visible = false; //permite ocultar el form de LOGIN para dar paso al FORM "SelectorPokemon"
+
+            SelectorPokemon formSelectorP = new SelectorPokemon();
+            formSelectorP.ShowDialog();
         }
 
         private bool IsValidusername1(string username1) //Metodo para validar que el usuario 1 pueda usar solo letras y numeros
@@ -210,6 +211,16 @@ namespace BatallaPokemon_juego
             {
                 return false;
             }
+        }
+
+        private void cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
