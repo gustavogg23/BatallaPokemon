@@ -50,7 +50,7 @@ namespace BatallaPokemon_juego
                 Pokemon pokemon = BarraCarga.DatosListas.listaPokemones.buscar(i); //busca el pokemon en la lista de pokemones según su número
 
                 Button btnPokemon = new Button(); // Se crea un nuevo botón
-                btnPokemon.Size = new Size(50, 50); // Se establece el tamaño del botón
+                btnPokemon.Size = new Size(55, 55); // Se establece el tamaño del botón
                 btnPokemon.FlatStyle = FlatStyle.Flat; // Se establece el estilo del botón
                 btnPokemon.BackColor = Color.Transparent; // Se establece el color de fondo del botón
                 try
@@ -68,7 +68,7 @@ namespace BatallaPokemon_juego
                 btnPokemon.FlatAppearance.MouseDownBackColor = Color.Transparent; // Se establece el color de fondo del botón cuando se presiona
                 btnPokemon.FlatAppearance.MouseOverBackColor = Color.Transparent; // Se establece el color de fondo del botón cuando el mouse pasa por encima
                 btnPokemon.Cursor = Cursors.Hand; // Se establece el cursor del botón
-                btnPokemon.Margin = new Padding(8); // Se establece el margen del botón
+                btnPokemon.Margin = new Padding(6); // Se establece el margen del botón
                 panelPokemones.Controls.Add(btnPokemon); // Se agrega el botón al panel de pokemones
             }
         }
