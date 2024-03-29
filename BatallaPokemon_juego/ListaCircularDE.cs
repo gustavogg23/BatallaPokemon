@@ -109,5 +109,11 @@ namespace BatallaPokemon_juego
         {
             return cabeza;
         }
+
+        // Método para obtener el tamaño de la lista
+        public int getTamano()
+        {
+            return tamano;
+        }
     }
 }

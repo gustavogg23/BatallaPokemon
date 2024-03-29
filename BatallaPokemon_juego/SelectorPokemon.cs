@@ -13,6 +13,7 @@ namespace BatallaPokemon_juego
 {
     public partial class SelectorPokemon : Form
     {
+        private int contadorPokemones = 0;
         public SelectorPokemon()
         {
             InitializeComponent();
@@ -30,10 +31,31 @@ namespace BatallaPokemon_juego
 
         private void aceptar_Click(object sender, EventArgs e)
         {
-            this.Visible = false; //permite ocultar el form de "SelectorPokemon" para dar paso al FORM "BC_BATALLA"
+            if (ValidarSeleccionPokemones()) // Se verifica que los dos jugadores hayan seleccionado 6 pokemones cada uno
+            {
+                this.Visible = false; //permite ocultar el form de "SelectorPokemon" para dar paso al FORM "BC_BATALLA"
 
-            BC_BATALLA formBC_BATALLA = new BC_BATALLA();
-            formBC_BATALLA.ShowDialog();
+                BC_BATALLA formBC_BATALLA = new BC_BATALLA();
+                formBC_BATALLA.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Ambos jugadores deben seleccionar 6 pokemones");
+                return;
+            }
+        }
+
+        // Método para validar que ambos jugadores hayan seleccionado 6 pokemones
+        private Boolean ValidarSeleccionPokemones()
+        {
+            if (LOGIN.DatosJugadores.player1.getPokemones().getTamano() == 6 && LOGIN.DatosJugadores.player2.getPokemones().getTamano() == 6) // Si ambos jugadores han seleccionado 6 pokemones
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private void panelPokemones_Paint(object sender, PaintEventArgs e) // NOTA: Este método no se utiliza NO BORRAR
@@ -69,8 +91,38 @@ namespace BatallaPokemon_juego
                 btnPokemon.FlatAppearance.MouseOverBackColor = Color.Transparent; // Se establece el color de fondo del botón cuando el mouse pasa por encima
                 btnPokemon.Cursor = Cursors.Hand; // Se establece el cursor del botón
                 btnPokemon.Margin = new Padding(6); // Se establece el margen del botón
+
+                // Se establece el evento click del botón
+                btnPokemon.Click += (s, e) => { Entrenador entrenador = DeterminarEntrenador();
+                    if (entrenador.getPokemones().getTamano() < 6)
+                    {
+                        entrenador.agregarPokemon(pokemon);
+                        contadorPokemones++;
+                        MessageBox.Show($"{entrenador.getNombre()} ha seleccionado a {pokemon.getNombre()}");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ya has seleccionado 6 pokemones");
+                    }
+                }; 
                 panelPokemones.Controls.Add(btnPokemon); // Se agrega el botón al panel de pokemones
             }
+        }
+
+        // Método para determinar a cuál jugador le toca elegir un pokémon
+        private Entrenador DeterminarEntrenador()
+        {
+            Entrenador entrenador;
+            if (contadorPokemones % 2 == 0)
+            {
+                entrenador = LOGIN.DatosJugadores.player1;
+            }
+            else
+            {
+                entrenador = LOGIN.DatosJugadores.player2;
+            }
+
+            return entrenador;
         }
 
         private void SelectorPokemon_Load(object sender, EventArgs e)
