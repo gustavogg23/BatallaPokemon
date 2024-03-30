@@ -173,6 +173,13 @@ namespace BatallaPokemon_juego
             if (defensor.getVida() <= 0)
             {
                 getEntrenadorNoTurno().getPokemones().eliminar(defensor.getNumero());
+
+                // Se verifica si la batalla ha terminado
+                if (BatallaTerminada())
+                {
+                    Entrenador ganador = Ganador(); // Se obtiene al ganador de la batalla
+                    ganador.setVictorias(ganador.getVictorias() + 1); // Se le suma una victoria al ganador
+                }
             }
 
             // Se cambia el turno
@@ -180,6 +187,12 @@ namespace BatallaPokemon_juego
 
             // Se aplica el efecto del estado alterado
             AplicarEfectoEstado();
+            // Se verifica si la batalla ha terminado
+            if (BatallaTerminada())
+            {
+                Entrenador ganador = Ganador(); // Se obtiene al ganador de la batalla
+                ganador.setVictorias(ganador.getVictorias() + 1); // Se le suma una victoria al ganador
+            }
         }
 
         public decimal CalcularEfectividadAtaque(string tipoAtaque, string tipoDefensor1, string tipoDefensor2)
@@ -545,6 +558,42 @@ namespace BatallaPokemon_juego
 
             // Se cambia el turno
             cambiarTurno();
+        }
+
+        // Método para verificar si la batalla ha terminado
+        public Boolean BatallaTerminada()
+        {
+            // Si la lista de alguno de los jugadores está vacía la batalla ha terminado
+            if (entrenador1.getPokemones().getTamano() == 0 || entrenador2.getPokemones().getTamano() == 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        // Método para obtener al ganador de la batalla
+        public Entrenador Ganador()
+        {
+            // Se verifica si la batalla ha terminado
+            if (BatallaTerminada())
+            {
+                // Si la lista de pokemones del entrenador 1 está vacía el ganador es el entrenador 2
+                if (entrenador1.getPokemones().getTamano() == 0)
+                {
+                    return entrenador2;
+                }
+                else
+                {
+                    return entrenador1;
+                }
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }
