@@ -69,6 +69,25 @@ namespace BatallaPokemon_juego
             return null; // Si no se encuentra el pokemon, se retorna nulo
         }
 
+        // Método para verificar si ya está un pokemon en la lista
+        public bool estaEnLista(int numero)
+        {
+            NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+            while (aux != null) // Mientras no se llegue al final de la lista
+            {
+                if (aux.getValor().getNumero() == numero) // Si el número del pokemon del nodo auxiliar es igual al número buscado
+                {
+                    return true; // Se retorna verdadero
+                }
+                aux = aux.getSiguiente(); // Se pasa al siguiente nodo
+                if (aux == cabeza) // Si el nodo auxiliar es la cabeza, se termina el ciclo
+                {
+                    return false; // Si no se encuentra el pokemon, se retorna falso
+                }
+            }
+            return false; // Si no se encuentra el pokemon, se retorna falso
+        }
+
         // Método para eliminar un pokemon de la lista
         public void eliminar(int numero)
         {
@@ -122,9 +141,9 @@ namespace BatallaPokemon_juego
             NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
             do // Bucle para recorrer la lista
             {
-                Console.WriteLine(aux.getValor().getNombre()); // Se imprime el nombre del pokemon del nodo auxiliar
                 aux = aux.getSiguiente(); // Se pasa al siguiente nodo
-            } while (aux != cabeza); // Mientras el nodo auxiliar no sea la cabeza
+            } 
+            while (aux != cabeza); // Mientras el nodo auxiliar no sea la cabeza
         }
     }
 }

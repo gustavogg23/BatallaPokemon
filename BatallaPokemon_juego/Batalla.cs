@@ -397,5 +397,22 @@ namespace BatallaPokemon_juego
                 }
             }
         }
+
+        // Método para cambiar pokemon activo
+        public void CambiarPokemon(int numeroPokemon)
+        {
+            // Se obtiene el pokemon seleccionado por el entrenador
+            Pokemon nuevoPokemon = getEntrenadorTurno().getPokemones().buscar(numeroPokemon);
+
+            // Se cambia el pokemon activo
+            if (turno == 1)
+            {
+                pokemonActivo1 = nuevoPokemon;
+            }
+            else
+            {
+                pokemonActivo2 = nuevoPokemon;
+            }
+        }
     }
 }

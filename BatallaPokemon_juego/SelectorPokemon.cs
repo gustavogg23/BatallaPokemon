@@ -96,9 +96,17 @@ namespace BatallaPokemon_juego
                 btnPokemon.Click += (s, e) => { Entrenador entrenador = DeterminarEntrenador();
                     if (entrenador.getPokemones().getTamano() < 6)
                     {
-                        entrenador.agregarPokemon(pokemon);
-                        contadorPokemones++;
-                        MessageBox.Show($"{entrenador.getNombre()} ha seleccionado a {pokemon.getNombre()}");
+                        if (!entrenador.getPokemones().estaEnLista(pokemon.getNumero()))
+                        {
+                            entrenador.agregarPokemon(pokemon);
+                            contadorPokemones++;
+                            MessageBox.Show($"{entrenador.getNombre()} ha seleccionado a {pokemon.getNombre()}");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya has seleccionado a este pokémon");
+                        }
+                        
                     }
                     else
                     {
