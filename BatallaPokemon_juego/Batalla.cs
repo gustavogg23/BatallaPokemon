@@ -413,6 +413,138 @@ namespace BatallaPokemon_juego
             {
                 pokemonActivo2 = nuevoPokemon;
             }
+
+            // Se cambia el turno
+            cambiarTurno();
+        }
+
+        // Método para usar un item
+        public void UsarItem(PilaItems itemSeleccionado)
+        {
+            // Se obtiene el entrenador en turno
+            Entrenador entrenador = getEntrenadorTurno();
+
+            // Se busca la pilas de items seleccionada por el entrenador
+            PilaItems item = entrenador.getItems().buscar(itemSeleccionado);
+
+            // Se verifica que la pila del item seleccionado no esté vacía
+            if (!item.estaVacia())
+            {
+                // Se obtiene el item de la pila
+                Item itemUsado = item.pop();
+
+                // Se verifica el tipo de item
+                switch (itemUsado.getNombre())
+                {
+                    case "Poción": // Si el item es una poción se le suma 20 de vida al pokemon activo
+                        if (turno == 1)
+                        {
+                            pokemonActivo1.setVida(pokemonActivo1.getVida() + 20);
+                        }
+                        else
+                        {
+                            pokemonActivo2.setVida(pokemonActivo2.getVida() + 20);
+                        }
+                        break;
+                    case "Superpoción": // Si el item es una poción máxima se le suma 50 de vida al pokemon activo
+                        if (turno == 1)
+                        {
+                            pokemonActivo1.setVida(pokemonActivo1.getVida() + 50);
+                        }
+                        else
+                        {
+                            pokemonActivo2.setVida(pokemonActivo2.getVida() + 50);
+                        }
+                        break;
+                    case "Hiperpoción": // Si el item es un revivir se revive al pokemon activo
+                        if (turno == 1)
+                        {
+                            pokemonActivo1.setVida(pokemonActivo1.getVida() + 200);
+                        }
+                        else
+                        {
+                            pokemonActivo2.setVida(pokemonActivo2.getVida() + 200);
+                        }
+                        break;
+                    case "Antiparálisis":
+                        // Si el item es una antiparalisis se cura la paralisis del pokemon activo
+                        if (turno == 1)
+                        {
+                            pokemonActivo1.setEstado("Ninguno");
+                            pokemonActivo1.setAtaque(pokemonActivo1.getAtaque() * 2);
+                        }
+                        else
+                        {
+                            pokemonActivo2.setEstado("Ninguno");
+                            pokemonActivo2.setAtaque(pokemonActivo2.getAtaque() * 2);
+                        }
+                        break;
+                    case "Antídoto":
+                        // Si el item es un antídoto se cura el envenenamiento del pokemon activo
+                        if (turno == 1)
+                        {
+                            pokemonActivo1.setEstado("Ninguno");
+                        }
+                        else
+                        {
+                            pokemonActivo2.setEstado("Ninguno");
+                        }
+                        break;
+                    case "Despertar":
+                        // Si el item es un despertar se despierta al pokemon activo
+                        if (turno == 1)
+                        {
+                            pokemonActivo1.setEstado("Ninguno");
+                            pokemonActivo1.setDefensa(pokemonActivo1.getDefensa() * 2);
+                        }
+                        else
+                        {
+                            pokemonActivo2.setEstado("Ninguno");
+                            pokemonActivo2.setDefensa(pokemonActivo2.getDefensa() * 2);
+                        }
+                        break;
+                    case "Cura Total":
+                        // Si el item es una cura total se cura cualquier estado alterado del pokemon activo y reestablece su vida
+                        if (turno == 1)
+                        {
+                            pokemonActivo1.setEstado("Ninguno");
+                            pokemonActivo1.setVida(pokemonActivo1.getVidaMax());
+                        }
+                        else
+                        {
+                            pokemonActivo2.setEstado("Ninguno");
+                            pokemonActivo2.setVida(pokemonActivo2.getVidaMax());
+                        }
+                        break;
+                    case "Max Poción":
+                        // Si el item es una poción máxima que reestablece la vida del pokemon activo
+                        if (turno == 1)
+                        {
+                            pokemonActivo1.setVida(pokemonActivo1.getVidaMax());
+                        }
+                        else
+                        {
+                            pokemonActivo2.setVida(pokemonActivo2.getVidaMax());
+                        }
+                        break;
+                    case "Precisión X":
+                        // Si el item es una poción máxima se le suma 50 de vida al pokemon activo
+                        if (turno == 1)
+                        {
+                            decimal precision = pokemonActivo1.getAtaque() * 0.22m;
+                            pokemonActivo1.setAtaque((int) Math.Round(pokemonActivo1.getAtaque() + precision));
+                        }
+                        else
+                        {
+                            decimal precision = pokemonActivo2.getAtaque() * 0.22m;
+                            pokemonActivo2.setAtaque((int)Math.Round(pokemonActivo2.getAtaque() + precision));
+                        }
+                        break;
+                }
+            }
+
+            // Se cambia el turno
+            cambiarTurno();
         }
     }
 }

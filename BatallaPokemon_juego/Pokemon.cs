@@ -14,6 +14,7 @@ namespace BatallaPokemon_juego
         private string tipo1;
         private string tipo2;
         private int vida;
+        private int vidaMax;
         private int ataque;
         private int defensa;
         private int velAtaque;
@@ -26,13 +27,14 @@ namespace BatallaPokemon_juego
         private Ataque[] ataques = new Ataque[4];
 
         // Método constructor
-        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad, string estado, string imagenFrente, string imagenEspalda, string imagen, Ataque[] ataques)
+        public Pokemon(int numero, string nombre, string tipo1, string tipo2, int vida, int vidaMax, int ataque, int defensa, int velAtaque, int velDefensa, int velocidad, string estado, string imagenFrente, string imagenEspalda, string imagen, Ataque[] ataques)
         {
             this.numero = numero;
             this.nombre = nombre;
             this.tipo1 = tipo1;
             this.tipo2 = tipo2;
             this.vida = vida;
+            this.vidaMax = vidaMax;
             this.ataque = ataque;
             this.defensa = defensa;
             this.velAtaque = velAtaque;
@@ -94,6 +96,16 @@ namespace BatallaPokemon_juego
         public void setVida(int vida)
         {
             this.vida = vida;
+        }
+
+        public int getVidaMax()
+        {
+            return vidaMax;
+        }
+
+        public void setVidaMax(int vidaMax)
+        {
+            this.vidaMax = vidaMax;
         }
 
         public int getAtaque()
