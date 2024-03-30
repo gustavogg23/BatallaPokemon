@@ -12,9 +12,13 @@ namespace BatallaPokemon_juego
 {
     public partial class Form_BATALLA : Form
     {
+        private Batalla batalla;
         public Form_BATALLA()
         {
             InitializeComponent();
+
+            // Se inicializa la batalla
+            batalla = new Batalla(LOGIN.DatosJugadores.player1, LOGIN.DatosJugadores.player2);
         }
 
         private void cerrar_Click(object sender, EventArgs e)
