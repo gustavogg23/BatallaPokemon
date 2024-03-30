@@ -184,4 +184,1015 @@
   <data name="L_POKEMON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\L_POKEMON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="abraespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abraespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abrafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abrafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Acid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Acid.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AerialBlast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AerialBlast.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aerodactylespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aerodactylespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aerodactylfrete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aerodactylfrete.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alakazamespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alakazamespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alakazamfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alakazamfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AncientPower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AncientPower.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Antidoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Antidoto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Antiparalisis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Antiparalisis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arbokespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arbokespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arbokfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arbokfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arcanineespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arcanineespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arcaninefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arcaninefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="articunoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\articunoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="articunofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\articunofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beedrillespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beedrillespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beedrillfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beedrillfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Beesting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Beesting.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bellsproutespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bellsproutespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bellsproutfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bellsproutfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blastoiseespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blastoiseespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blastoisefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blastoisefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bulbasaurespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bulbasaurespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bulbasaurfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bulbasaurfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Burn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Burn.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butterfreeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\butterfreeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butterfreefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\butterfreefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caterpieespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caterpieespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="caterpiefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caterpiefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chanseyespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chanseyespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chanseyfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chanseyfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charizardespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charizardespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charizardfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charizardfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charmanderespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charmanderespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charmanderfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charmanderfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charmeleonespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charmeleonespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="charmeleonfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charmeleonfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clefableespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clefableespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clefablefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clefablefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clefairyespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clefairyespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clefairyfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clefairyfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CloseCombat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CloseCombat.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloysterespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloysterespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloysterfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloysterfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Crunch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Crunch.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuboneespalds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cuboneespalds.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cubonefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cubonefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Curatotal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Curatotal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cut.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Despertar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Despertar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dewgongespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dewgongespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dewgongfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dewgongfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diglettespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diglettespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diglettfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diglettfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ditto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ditto.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dittoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dittoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dodrioespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dodrioespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dodriofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dodriofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doduoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doduoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="doduofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doduofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonairespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonairespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonairfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonairfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DragonClaw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DragonClaw.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragoniteespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragoniteespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dragonitefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dragonitefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dratiniespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dratiniespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dratinifrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dratinifrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drowzeeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drowzeeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drowzeefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drowzeefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dugtrioespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dugtrioespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dugtriofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dugtriofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eeveeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eeveeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eeveefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eeveefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ekansespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ekansespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ekansfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ekansfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electabuzzespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electabuzzespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electabuzzfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electabuzzfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electrodeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electrodeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electrodefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electrodefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnergyBall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnergyBall.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exeggcuteespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exeggcuteespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exeggcutefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exeggcutefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exeggutorespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exeggutorespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exeggutorfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exeggutorfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="farfetchdespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\farfetchdespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="farfetchdfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\farfetchdfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fearowespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fearowespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fearowfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fearowfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fireblast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fireblast.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fissure" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fissure.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flareonespald" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flareonespald.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flareonfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flareonfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlashCannon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlashCannon.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fly.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gastlyespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gastlyespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gastlyfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gastlyfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gengarespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gengarespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gengarfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gengarfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geodudeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geodudeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="geodudefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\geodudefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gloomespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gloomespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gloomfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gloomfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="golbatespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\golbatespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="golbatfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\golbatfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goldeenespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goldeenespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goldeenfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goldeenfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="golduckespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\golduckespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="golduckfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\golduckfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="golemespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\golemespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="golemfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\golemfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gravelerespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gravelerespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gravelerfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gravelerfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grimerespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grimerespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grimerfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grimerfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="growlitheespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\growlitheespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="growlithefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\growlithefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grudge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grudge.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gyaradosespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gyaradosespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gyaradosfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gyaradosfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="haunterespala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haunterespala.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="haunterfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\haunterfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hiperpocion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hiperpocion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hitmonchanespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hitmonchanespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hitmonchanfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hitmonchanfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hitmonleeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hitmonleeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hitmonleefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hitmonleefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horseaesp_alda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\horseaesp[alda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="horseafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\horseafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hydropump" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hydropump.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hypnoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hypnoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hypnofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hypnofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hypnosis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hypnosis.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IceShard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IceShard.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ironhead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ironhead.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="item_0004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\item_0004.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ivysaurespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ivysaurespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ivysaurfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ivysaurfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jigglypuffrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jigglypuffrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jigglypuffwespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jigglypuffwespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jolteonespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jolteonespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jolteonfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jolteonfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jynxespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jynxespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jynxfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jynxfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kabutoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kabutoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kabutofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kabutofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kabutopsespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kabutopsespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kabutopsfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kabutopsfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kadabraespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kadabraespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kadabrafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kadabrafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kakunaespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kakunaespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kakunafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kakunafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kangaskhanespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kangaskhanespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kangaskhanfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kangaskhanfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kick.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kinglerespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kinglerespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kinglerfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kinglerfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koffingespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koffingespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="koffingfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\koffingfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="krabbyespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\krabbyespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="krabbyfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\krabbyfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="laprasespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laprasespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="laprasfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laprasfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lickitungespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lickitungespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lickitungfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lickitungfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="machampespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machampespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="machampfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machampfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="machokeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machokeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="machokefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machokefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="machopespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machopespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="machopfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\machopfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magikarpespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magikarpespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magikarpfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magikarpfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magmarespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magmarespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magmarfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magmarfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnemiteespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnemiteespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnemitefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnemitefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnetonespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnetonespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnetonfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnetonfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mankeyespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mankeyespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mankeyfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mankeyfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marowakespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marowakespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marowakfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marowakfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maxpocion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maxpocion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="meowthespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\meowthespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="meowthfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\meowthfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="metapodespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\metapodespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="metapodfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\metapodfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mewespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mewespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mewfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mewfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mewtwoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mewtwoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mewtwofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mewtwofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moltresespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moltresespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moltresfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moltresfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mr_mimeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mr_mimeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mr_mimefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mr_mimefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mukespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mukespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mukfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mukfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidokingespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidokingespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidokingfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidokingfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidoqueenespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidoqueenespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidoqueenfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidoqueenfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidoranespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidoranespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidoranfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidoranfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidoranoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidoranoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidoranofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidoranofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidorinaespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidorinaespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidorinafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidorinafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidorinoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidorinoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nidorinofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nidorinofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ninetalesespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ninetalesespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ninetalesfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ninetalesfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oddishespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oddishespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oddishfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oddishfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omanyteespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omanyteespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omanytefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omanytefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omastarespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omastarespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="omastarfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\omastarfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="onixespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\onixespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="onixfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\onixfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parasectespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parasectespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parasectfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parasectfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parasespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parasespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parasfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parasfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persianespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\persianespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="persianfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\persianfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pidgeotespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pidgeotespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pidgeotfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pidgeotfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pidgeottoespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pidgeottoespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pidgeottofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pidgeottofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pidgeyespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pidgeyespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pidgeyfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pidgeyfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikachuespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikachuespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikachufrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikachufrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pinsirespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pinsirespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pinsirfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pinsirfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pocion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pocion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poliwagespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poliwagespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poliwagfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poliwagfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poliwhirlespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poliwhirlespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poliwhirlfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poliwhirlfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poliwrathespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poliwrathespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poliwrathfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poliwrathfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ponytaespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ponytaespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ponytafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ponytafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porygonespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porygonespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="porygonfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\porygonfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Precisionx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Precisionx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="primeapeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\primeapeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="primeapefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\primeapefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="psyduckespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\psyduckespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="psyduckfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\psyduckfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raichuespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raichuespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raichufrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raichufrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidashespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidashespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rapidashfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapidashfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raticateespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raticateespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raticatefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raticatefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rattataespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rattataespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rattatafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rattatafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rhydonespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rhydonespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rhydonfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rhydonfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rhyhornespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rhyhornespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rhyhornfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rhyhornfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sandshrewespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sandshrewespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sandshrewfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sandshrewfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sandslashespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sandslashespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sandslashfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sandslashfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scytherespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scytherespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scytherfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scytherfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seadraespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seadraespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seadrafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seadrafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seakingespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seakingespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seakingfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seakingfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seelespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seelespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seelfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\seelfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shellderespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shellderespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shellderfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shellderfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slowbroespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slowbroespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slowbrofrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slowbrofrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slowpokeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slowpokeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slowpokefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slowpokefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snorlaxespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snorlaxespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snorlaxfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\snorlaxfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spearowespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spearowespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spearowfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spearowfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="squirtleespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\squirtleespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="squirtlefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\squirtlefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="starmieespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starmieespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="starmiefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starmiefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="staryuespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\staryuespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="staryufrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\staryufrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Superpocion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Superpocion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Swift" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Swift.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tangelaespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tangelaespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tangelafrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tangelafrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taurosespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taurosespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="taurosfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taurosfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Telekinesis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Telekinesis.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tentacoolespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tentacoolespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tentacoolfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tentacoolfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tentacruelespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tentacruelespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tentacruelfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tentacruelfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thunderball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thunderball.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thunderbolt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thunderbolt.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaporeonespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaporeonespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vaporeonfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vaporeonfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venomothespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venomothespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venomothfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venomothfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venonatespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venonatespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venonatfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venonatfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venusaurespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venusaurespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="venusaurfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\venusaurfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="victreebelespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\victreebelespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="victreebelfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\victreebelfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vileplumeespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vileplumeespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vileplumefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vileplumefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voltorbespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voltorbespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="voltorbfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\voltorbfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vulpixespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vulpixespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vulpixfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vulpixfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wartortleespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wartortleespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wartortlefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wartortlefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weedleespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weedleespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weedlefrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weedlefrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weepinbellespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weepinbellespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weepinbellfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weepinbellfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weezingespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weezingespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weezingfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weezingfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Whirpool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Whirpool.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wigglytuffespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wigglytuffespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wigglytufffrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wigglytufffrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zapdosespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zapdosespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zapdosfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zapdosfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zubatespalda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zubatespalda.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zubatfrente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zubatfrente.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -687,6 +687,1017 @@
   <ItemGroup>
     <None Include="Resources\L_POKEMON.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abraespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abrafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aerodactylespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aerodactylfrete.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alakazamespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alakazamfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arbokespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arbokfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcanineespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcaninefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\articunoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\articunofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beedrillespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beedrillfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bellsproutespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bellsproutfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blastoiseespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blastoisefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulbasaurespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulbasaurfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butterfreeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butterfreefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caterpieespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caterpiefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chanseyespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chanseyfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charizardespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charizardfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charmanderespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charmanderfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charmeleonespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charmeleonfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clefableespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clefablefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clefairyespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clefairyfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloysterespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloysterfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuboneespalds.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cubonefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dewgongespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dewgongfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diglettespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diglettfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ditto.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dittoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodrioespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dodriofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doduoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doduofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragonairespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragonairfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragoniteespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragonitefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dratiniespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dratinifrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drowzeeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drowzeefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dugtrioespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dugtriofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eeveeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eeveefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekansespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekansfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electabuzzespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electabuzzfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrodeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrodefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exeggcuteespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exeggcutefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exeggutorespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exeggutorfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farfetchdespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\farfetchdfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fearowespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fearowfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flareonespald.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flareonfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gastlyespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gastlyfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gengarespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gengarfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geodudeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geodudefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gloomespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gloomfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golbatespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golbatfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldeenespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goldeenfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golduckespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golduckfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golemespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\golemfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gravelerespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gravelerfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grimerespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grimerfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\growlitheespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\growlithefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyaradosespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gyaradosfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haunterespala.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haunterfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitmonchanespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitmonchanfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitmonleeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hitmonleefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horseaesp[alda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horseafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hypnoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hypnofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ivysaurespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ivysaurfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jigglypuffrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jigglypuffwespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jolteonespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jolteonfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jynxespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jynxfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kabutoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kabutofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kabutopsespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kabutopsfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kadabraespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kadabrafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kakunaespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kakunafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kangaskhanespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kangaskhanfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kinglerespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kinglerfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koffingespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koffingfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krabbyespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krabbyfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laprasespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\laprasfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lickitungespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lickitungfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machampespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machampfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machokeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machokefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machopespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machopfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magikarpespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magikarpfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magmarespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magmarfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnemiteespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnemitefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetonespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnetonfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mankeyespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mankeyfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marowakespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marowakfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meowthespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meowthfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metapodespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metapodfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mewespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mewfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mewtwoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mewtwofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moltresespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moltresfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mr_mimeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mr_mimefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mukespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mukfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidokingespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidokingfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoqueenespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoqueenfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoranespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoranfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoranoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidoranofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidorinaespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidorinafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidorinoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nidorinofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninetalesespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninetalesfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oddishespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oddishfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omanyteespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omanytefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omastarespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omastarfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onixespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\onixfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parasectespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parasectfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parasespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parasfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persianespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persianfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgeotespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgeotfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgeottoespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgeottofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgeyespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pidgeyfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachuespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikachufrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinsirespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinsirfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwagespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwagfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwhirlespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwhirlfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwrathespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poliwrathfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ponytaespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ponytafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porygonespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porygonfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primeapeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\primeapefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psyduckespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psyduckfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raichuespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raichufrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapidashespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapidashfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raticateespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raticatefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rattataespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rattatafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhydonespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhydonfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhyhornespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rhyhornfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandshrewespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandshrewfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandslashespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sandslashfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scytherespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scytherfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seadraespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seadrafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seakingespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seakingfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seelespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seelfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shellderespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shellderfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slowbroespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slowbrofrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slowpokeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slowpokefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorlaxespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snorlaxfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spearowespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spearowfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squirtleespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squirtlefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starmieespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starmiefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staryuespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\staryufrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tangelaespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tangelafrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taurosespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taurosfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tentacoolespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tentacoolfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tentacruelespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tentacruelfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaporeonespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vaporeonfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venomothespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venomothfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venonatespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venonatfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venusaurespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venusaurfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\victreebelespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\victreebelfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vileplumeespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vileplumefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltorbespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltorbfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vulpixespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vulpixfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wartortleespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wartortlefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weedleespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weedlefrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weepinbellespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weepinbellfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weezingespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\weezingfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wigglytuffespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wigglytufffrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zapdosespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zapdosfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zubatespalda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zubatfrente.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acid.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AerialBlast.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AncientPower.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beesting.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseCombat.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crunch.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cut.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DragonClaw.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnergyBall.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fireblast.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fissure.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlashCannon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fly.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grudge.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hydropump.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hypnosis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IceShard.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ironhead.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kick.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swift.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Telekinesis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thunderball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thunderbolt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whirpool.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antidoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Antiparalisis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Curatotal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Despertar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hiperpocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item_0004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maxpocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Precisionx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Superpocion.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
