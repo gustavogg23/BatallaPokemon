@@ -84,7 +84,7 @@ namespace BatallaPokemon_juego
             foreach (string linea in lineas) // Se recorre el arreglo de strings
             {
                 string[] datos = linea.Split(','); // Se separan los datos de la línea por comas
-                Ataque ataque = new Ataque(datos[0], datos[1], datos[2]); // Se crea un objeto de la clase Ataque con los datos de la línea
+                Ataque ataque = new Ataque(datos[0], datos[1], datos[2], datos[3]); // Se crea un objeto de la clase Ataque con los datos de la línea
                 DatosListas.listaAtaques.agregar(ataque); // Se agrega el ataque a la lista de ataques
             } 
         }
@@ -107,7 +107,7 @@ namespace BatallaPokemon_juego
                 {
                     ataques[i] = DatosListas.listaAtaques.buscar(datos[13 + i]); // Se busca el ataque en la lista de ataques y se guarda en el arreglo
                 } 
-                Pokemon pokemon = new Pokemon(int.Parse(datos[0]), datos[1], datos[2], datos[3], int.Parse(datos[4]), int.Parse(datos[5]), int.Parse(datos[6]), int.Parse(datos[7]), int.Parse(datos[8]), int.Parse(datos[9]), datos[10], datos[11], datos[12], ataques); // Se crea un objeto de la clase Pokemon con los datos de la línea
+                Pokemon pokemon = new Pokemon(int.Parse(datos[0]), datos[1], datos[2], datos[3], int.Parse(datos[4]), int.Parse(datos[5]), int.Parse(datos[6]), int.Parse(datos[7]), int.Parse(datos[8]), int.Parse(datos[9]), "Normal", datos[10], datos[11], datos[12], ataques); // Se crea un objeto de la clase Pokemon con los datos de la línea
                 DatosListas.listaPokemones.agregar(pokemon); // Se agrega el pokemon a la lista de pokemones
             }
         }

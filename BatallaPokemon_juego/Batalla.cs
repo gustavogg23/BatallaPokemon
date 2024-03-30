@@ -12,6 +12,8 @@ namespace BatallaPokemon_juego
         private Entrenador entrenador1;
         private Entrenador entrenador2;
         private int turno;
+        private Pokemon pokemonActivo1;
+        private Pokemon pokemonActivo2;
 
         // Método constructor
         public Batalla(Entrenador entrenador1, Entrenador entrenador2)
@@ -19,6 +21,8 @@ namespace BatallaPokemon_juego
             this.entrenador1 = entrenador1;
             this.entrenador2 = entrenador2;
             determinarTurno();
+            pokemonActivo1 = entrenador1.getPokemones().getPrimero().getValor();
+            pokemonActivo2 = entrenador2.getPokemones().getPrimero().getValor();
         }
 
         // Método para determinar quien tiene el primer turno
@@ -35,6 +39,57 @@ namespace BatallaPokemon_juego
             {
                 turno = 2;
             }
+        }
+
+        // Métodos Getters y Setters
+        public Entrenador getEntrenador1()
+        {
+            return entrenador1;
+        }
+
+        public void setEntrenador1(Entrenador entrenador1)
+        {
+            this.entrenador1 = entrenador1;
+        }
+
+        public Entrenador getEntrenador2()
+        {
+            return entrenador2;
+        }
+
+        public void setEntrenador2(Entrenador entrenador2)
+        {
+            this.entrenador2 = entrenador2;
+        }
+
+        public int getTurno()
+        {
+            return turno;
+        }
+
+        public void setTurno(int turno)
+        {
+            this.turno = turno;
+        }
+
+        public Pokemon getPokemonActivo1()
+        {
+            return pokemonActivo1;
+        }
+
+        public void setPokemonActivo1(Pokemon pokemonActivo1)
+        {
+            this.pokemonActivo1 = pokemonActivo1;
+        }
+
+        public Pokemon getPokemonActivo2()
+        {
+            return pokemonActivo2;
+        }
+
+        public void setPokemonActivo2(Pokemon pokemonActivo2)
+        {
+            this.pokemonActivo2 = pokemonActivo2;
         }
 
         // Método para obtener el entrenador que tiene el turno
@@ -74,6 +129,219 @@ namespace BatallaPokemon_juego
             {
                 turno = 1;
             }
+        }
+
+        // Método para atacar
+        public void atacar(int indiceAtaque)
+        {
+            // Se obtienen los pokemones activos de los entrenadores y se determina cual ataca y cual defiende
+            Pokemon atacante = (turno == 1) ? pokemonActivo1 : pokemonActivo2;
+            Pokemon defensor = (turno == 1) ? pokemonActivo2 : pokemonActivo1;
+
+            // Se obtiene el ataque seleccionado por el atacante
+            Ataque ataque = atacante.getAtaques()[indiceAtaque];
+
+            // Se calcula el daño en base al ataque del atacante y la defensa del defensor
+            int dmg = atacante.getAtaque() - defensor.getDefensa();
+
+            // Para que siempre haya 1 como mínimo de daño
+            dmg = Math.Max(dmg, 1);
+
+            // Se calcula el multiplicador de efectividad del ataque
+            decimal multEfectividad = CalcularEfectividadAtaque(ataque.getTipo(), defensor.getTipo1(), defensor.getTipo2());
+
+            // Se aplica el multiplicador de efectividad al daño
+            dmg = (int)Math.Round(dmg * multEfectividad);
+
+            // Se aplica el daño a la estadística de vida del defensor
+            defensor.setVida(defensor.getVida() - dmg);
+
+            // Si luego del ataque la vida del defensor es 0 o menor a 0 se elimina el pokemon de la lista de pokemones del entrenador
+            if (defensor.getVida() <= 0)
+            {
+                getEntrenadorNoTurno().getPokemones().eliminar(defensor.getNumero());
+            }
+
+            // Se cambia el turno
+            cambiarTurno();
+        }
+
+        public decimal CalcularEfectividadAtaque(string tipoAtaque, string tipoDefensor1, string tipoDefensor2)
+        {
+            decimal multiplicador;
+
+            // Se verifica cada tipo y su efectividad contra los tipos del defensor
+            if (tipoAtaque == "Normal" && (tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Normal" && (tipoDefensor1 == "Ghost" || tipoDefensor2 == "Ghost"))
+            {
+                multiplicador = 0m;
+            }
+            else if (tipoAtaque == "Fire" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Water" || tipoDefensor2 == "Water" || tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock" || tipoDefensor1 == "Dragon" || tipoDefensor2 == "Dragon"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Fire" && (tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Ice" || tipoDefensor2 == "Ice" || tipoDefensor1 == "Bug" || tipoDefensor2 == "Bug" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Water" && (tipoDefensor1 == "Water" || tipoDefensor2 == "Water" || tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Dragon" || tipoDefensor2 == "Dragon"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Water" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Ground" || tipoDefensor2 == "Ground" || tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Electric" && (tipoDefensor1 == "Electric" || tipoDefensor2 == "Electric" || tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Dragon" || tipoDefensor2 == "Dragon"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Electric" && (tipoDefensor1 == "Water" || tipoDefensor2 == "Water" || tipoDefensor1 == "Flying" || tipoDefensor2 == "Flying"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Electric" && (tipoDefensor1 == "Ground" || tipoDefensor2 == "Ground"))
+            {
+                multiplicador = 0m;
+            }
+            else if (tipoAtaque == "Grass" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Poison" || tipoDefensor2 == "Poison" || tipoDefensor1 == "Flying" || tipoDefensor2 == "Flying" || tipoDefensor1 == "Bug" || tipoDefensor2 == "Bug" || tipoDefensor1 == "Dragon" || tipoDefensor2 == "Dragon" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Grass" && (tipoDefensor1 == "Water" || tipoDefensor2 == "Water" || tipoDefensor1 == "Ground" || tipoDefensor2 == "Ground" || tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Ice" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Water" || tipoDefensor2 == "Water" || tipoDefensor1 == "Ice" || tipoDefensor2 == "Ice" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Ice" && (tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Ground" || tipoDefensor2 == "Ground" || tipoDefensor1 == "Flying" || tipoDefensor2 == "Flying" || tipoDefensor1 == "Dragon" || tipoDefensor2 == "Dragon"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Fightig" && (tipoDefensor1 == "Poison" || tipoDefensor2 == "Poison" || tipoDefensor1 == "Flying" || tipoDefensor2 == "Flying" || tipoDefensor1 == "Psychic" || tipoDefensor2 == "Psychic" || tipoDefensor1 == "Bug" || tipoDefensor2 == "Bug" || tipoDefensor1 == "Fairy" || tipoDefensor2 == "Fairy"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Fightig" && (tipoDefensor1 == "Normal" || tipoDefensor2 == "Normal" || tipoDefensor1 == "Ice" || tipoDefensor2 == "Ice" || tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Fighting" && (tipoDefensor1 == "Ghost" || tipoDefensor2 == "Ghost"))
+            {
+                multiplicador = 0m;
+            }
+            else if (tipoAtaque == "Poison" && (tipoDefensor1 == "Poison" || tipoDefensor2 == "Poison" || tipoDefensor1 == "Ground" || tipoDefensor2 == "Ground" || tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock" || tipoDefensor1 == "Ghost" || tipoDefensor2 == "Ghost"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Poison" && (tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Fairy" || tipoDefensor2 == "Fairy"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Poison" && (tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0m;
+            }
+            else if (tipoAtaque == "Ground" && (tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Bug" || tipoDefensor2 == "Bug"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Ground" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Electric" || tipoDefensor2 == "Electric" || tipoDefensor1 == "Poison" || tipoDefensor2 == "Poison" || tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Ground" && (tipoDefensor1 == "Flying" || tipoDefensor2 == "Flying"))
+            {
+                multiplicador = 0m;
+            }
+            else if (tipoAtaque == "Flying" && (tipoDefensor1 == "Electric" || tipoDefensor2 == "Electric" || tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Flying" && (tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Fighting" || tipoDefensor2 == "Fighting" || tipoDefensor1 == "Bug" || tipoDefensor2 == "Bug"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Psychic" && (tipoDefensor1 == "Psychic" || tipoDefensor2 == "Psychic" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Psychic" && (tipoDefensor1 == "Fighting" || tipoDefensor2 == "Fighting" || tipoDefensor1 == "Poison" || tipoDefensor2 == "Poison"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Bug" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Fighting" || tipoDefensor2 == "Fighting" || tipoDefensor1 == "Poison" || tipoDefensor2 == "Poison" || tipoDefensor1 == "Flying" || tipoDefensor2 == "Flying" || tipoDefensor1 == "Ghost" || tipoDefensor2 == "Ghost" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Bug" && (tipoDefensor1 == "Grass" || tipoDefensor2 == "Grass" || tipoDefensor1 == "Psychic" || tipoDefensor2 == "Psychic" || tipoDefensor1 == "Fairy" || tipoDefensor2 == "Fairy"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Rock" && (tipoDefensor1 == "Fighting" || tipoDefensor2 == "Fighting" || tipoDefensor1 == "Ground" || tipoDefensor2 == "Ground" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Rock" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Ice" || tipoDefensor2 == "Ice" || tipoDefensor1 == "Flying" || tipoDefensor2 == "Flying" || tipoDefensor1 == "Bug" || tipoDefensor2 == "Bug"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Ghost" && (tipoDefensor1 == "Normal" || tipoDefensor2 == "Normal"))
+            {
+                multiplicador = 0m;
+            }
+            else if (tipoAtaque == "Ghost" && (tipoDefensor1 == "Psychic" || tipoDefensor2 == "Psychic" || tipoDefensor1 == "Ghost" || tipoDefensor2 == "Ghost"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Dragon" && (tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Dragon" && (tipoDefensor1 == "Dragon" || tipoDefensor2 == "Dragon"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Fairy" && (tipoDefensor1 == "Fighting" || tipoDefensor2 == "Fighting" || tipoDefensor1 == "Dragon" || tipoDefensor2 == "Dragon"))
+            {
+                multiplicador = 2m;
+            }
+            else if (tipoAtaque == "Fairy" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Poison" || tipoDefensor2 == "Poison" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Steel" && (tipoDefensor1 == "Fire" || tipoDefensor2 == "Fire" || tipoDefensor1 == "Water" || tipoDefensor2 == "Water" || tipoDefensor1 == "Electric" || tipoDefensor2 == "Electric" || tipoDefensor1 == "Steel" || tipoDefensor2 == "Steel"))
+            {
+                multiplicador = 0.5m;
+            }
+            else if (tipoAtaque == "Steel" && (tipoDefensor1 == "Ice" || tipoDefensor2 == "Ice" || tipoDefensor1 == "Rock" || tipoDefensor2 == "Rock" || tipoDefensor1 == "Fairy" || tipoDefensor2 == "Fairy"))
+            {
+                multiplicador = 2m;
+            }
+            else
+            {
+                multiplicador = 1m;
+            }
+
+            return multiplicador;
+        }
+
+        public void AplicarEfectoAtaque(int indiceAtaque)
+        {
+            // Se obtiene el pokemon activo del atacante
+            Pokemon atacante = (turno == 1) ? pokemonActivo1 : pokemonActivo2;
+            Pokemon defensor = (turno == 1) ? pokemonActivo2 : pokemonActivo1;
+
+            // Se obtiene el ataque seleccionado por el atacante
+            Ataque ataque = atacante.getAtaques()[indiceAtaque];
+
+            // Se cambia el estado del pokemon defensor según el efecto del ataque
+            defensor.setEstado(ataque.getEfecto());
         }
     }
 }

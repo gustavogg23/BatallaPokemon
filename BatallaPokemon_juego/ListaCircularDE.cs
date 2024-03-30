@@ -115,5 +115,16 @@ namespace BatallaPokemon_juego
         {
             return tamano;
         }
+
+        // Método para recorrer la lista
+        public void recorrer()
+        {
+            NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+            do // Bucle para recorrer la lista
+            {
+                Console.WriteLine(aux.getValor().getNombre()); // Se imprime el nombre del pokemon del nodo auxiliar
+                aux = aux.getSiguiente(); // Se pasa al siguiente nodo
+            } while (aux != cabeza); // Mientras el nodo auxiliar no sea la cabeza
+        }
     }
 }
