@@ -153,8 +153,21 @@ namespace BatallaPokemon_juego
             // Se aplica el multiplicador de efectividad al daño
             dmg = (int)Math.Round(dmg * multEfectividad);
 
+            // Se genera un número al azar entre el 0 y el 100 para determinar si el ataque es crítico
+            Random chanceCritico = new Random();
+            if (chanceCritico.Next(0, 100) < 10) // Si el número es menor a 10 el ataque es crítico
+            {
+                dmg *= 3; // Se triplica el daño causado
+            }
+
             // Se aplica el daño a la estadística de vida del defensor
             defensor.setVida(defensor.getVida() - dmg);
+
+            // Se aplica efecto del ataque
+            if (ataque.getEfecto() != "Ninguno")
+            {
+                AplicarEfectoAtaque(indiceAtaque);
+            }
 
             // Si luego del ataque la vida del defensor es 0 o menor a 0 se elimina el pokemon de la lista de pokemones del entrenador
             if (defensor.getVida() <= 0)
@@ -164,6 +177,9 @@ namespace BatallaPokemon_juego
 
             // Se cambia el turno
             cambiarTurno();
+
+            // Se aplica el efecto del estado alterado
+            AplicarEfectoEstado();
         }
 
         public decimal CalcularEfectividadAtaque(string tipoAtaque, string tipoDefensor1, string tipoDefensor2)
@@ -331,6 +347,7 @@ namespace BatallaPokemon_juego
             return multiplicador;
         }
 
+        // Método para aplicar el efecto de un ataque
         public void AplicarEfectoAtaque(int indiceAtaque)
         {
             // Se obtiene el pokemon activo del atacante
@@ -342,6 +359,43 @@ namespace BatallaPokemon_juego
 
             // Se cambia el estado del pokemon defensor según el efecto del ataque
             defensor.setEstado(ataque.getEfecto());
+        }
+
+        // Método para aplicar el efecto de un estado alterado
+        public void AplicarEfectoEstado()
+        {
+            // Se obtiene el pokemon activo del turno
+            Pokemon pokemon = (turno == 1) ? pokemonActivo1 : pokemonActivo2;
+
+            // Se verifica si el pokemon tiene un estado alterado
+            if (pokemon.getEstado() != "Ninguno")
+            {
+                // Se aplica el efecto del estado alterado
+                switch (pokemon.getEstado())
+                {
+                    case "Envenenado": // Si el estado es envenenado se le resta 5 de vida al pokemon
+                        pokemon.setVida(pokemon.getVida() - 5);
+                        break;
+                    case "Paralisis": // Si el estado es paralisis se le reduce la velocidad a la mitad
+                        Random rnd = new Random(); // Se crea un objeto de la clase Random
+                        if (rnd.Next(0, 100) < 20) // Se genera un número aleatorio entre el 0 y el 100
+                        {
+                            pokemon.setAtaque(pokemon.getAtaque() / 2); // Si el número es menor a 20 se reduce el ataque a la mitad
+                        }
+                        break;
+                    case "Dormido": // Si el estado es dormido se le reduce la defensa a la mitad
+                        Random rnd2 = new Random();
+                        if (rnd2.Next(0, 100) < 50) // Se genera un número aleatorio entre el 0 y el 100
+                        {
+                            pokemon.setEstado("Ninguno"); // Si el número es menor a 50 se despierta el pokemon
+                        }
+                        else
+                        {
+                            pokemon.setDefensa(pokemon.getDefensa() / 2); // Si el número es mayor o igual a 50 se reduce la defensa a la mitad
+                        }
+                        break;
+                }
+            }
         }
     }
 }
