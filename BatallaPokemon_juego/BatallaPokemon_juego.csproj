@@ -67,6 +67,18 @@
     <Compile Include="BC_BATALLA.Designer.cs">
       <DependentUpon>BC_BATALLA.cs</DependentUpon>
     </Compile>
+    <Compile Include="BOLSA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BOLSA.Designer.cs">
+      <DependentUpon>BOLSA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BtnPOKEMON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BtnPOKEMON.Designer.cs">
+      <DependentUpon>BtnPOKEMON.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entrenador.cs" />
     <Compile Include="Form_BATALLA.cs">
       <SubType>Form</SubType>
@@ -92,6 +104,12 @@
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="LUCHA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LUCHA.Designer.cs">
+      <DependentUpon>LUCHA.cs</DependentUpon>
+    </Compile>
     <Compile Include="NodoAtaque.cs" />
     <Compile Include="NodoItem.cs" />
     <Compile Include="NodoJugador.cs" />
@@ -112,6 +130,12 @@
     <EmbeddedResource Include="BC_BATALLA.resx">
       <DependentUpon>BC_BATALLA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BOLSA.resx">
+      <DependentUpon>BOLSA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BtnPOKEMON.resx">
+      <DependentUpon>BtnPOKEMON.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_BATALLA.resx">
       <DependentUpon>Form_BATALLA.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LUCHA.resx">
+      <DependentUpon>LUCHA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -1697,6 +1724,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Superpocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LUCHA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOLSA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LUCHAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POKEMON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnAntidoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnAntiparalisis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnCuraTotal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnDespertar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnHiperPocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnMaxPocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnPocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnPrecisionX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BtnSuperPocion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HUIR.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

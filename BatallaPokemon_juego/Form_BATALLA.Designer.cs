@@ -28,10 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_BATALLA));
             this.cerrar = new System.Windows.Forms.PictureBox();
             this.minimizar = new System.Windows.Forms.PictureBox();
+            this.luchar = new System.Windows.Forms.Button();
+            this.pokemon = new System.Windows.Forms.Button();
+            this.bolsa = new System.Windows.Forms.Button();
+            this.huir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // cerrar
@@ -58,11 +69,108 @@
             this.minimizar.TabStop = false;
             this.minimizar.Click += new System.EventHandler(this.minimizar_Click);
             // 
+            // luchar
+            // 
+            this.luchar.BackColor = System.Drawing.Color.Transparent;
+            this.luchar.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.LUCHAR;
+            this.luchar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.luchar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.luchar.FlatAppearance.BorderSize = 0;
+            this.luchar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.luchar.Location = new System.Drawing.Point(1038, 406);
+            this.luchar.Name = "luchar";
+            this.luchar.Size = new System.Drawing.Size(195, 56);
+            this.luchar.TabIndex = 2;
+            this.luchar.UseVisualStyleBackColor = false;
+            this.luchar.Click += new System.EventHandler(this.luchar_Click);
+            // 
+            // pokemon
+            // 
+            this.pokemon.BackColor = System.Drawing.Color.Transparent;
+            this.pokemon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemon.BackgroundImage")));
+            this.pokemon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pokemon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pokemon.FlatAppearance.BorderSize = 0;
+            this.pokemon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pokemon.Location = new System.Drawing.Point(1038, 467);
+            this.pokemon.Name = "pokemon";
+            this.pokemon.Size = new System.Drawing.Size(195, 56);
+            this.pokemon.TabIndex = 3;
+            this.pokemon.UseVisualStyleBackColor = false;
+            this.pokemon.Click += new System.EventHandler(this.pokemon_Click);
+            // 
+            // bolsa
+            // 
+            this.bolsa.BackColor = System.Drawing.Color.Transparent;
+            this.bolsa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bolsa.BackgroundImage")));
+            this.bolsa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bolsa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bolsa.FlatAppearance.BorderSize = 0;
+            this.bolsa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bolsa.Location = new System.Drawing.Point(1038, 529);
+            this.bolsa.Name = "bolsa";
+            this.bolsa.Size = new System.Drawing.Size(195, 56);
+            this.bolsa.TabIndex = 4;
+            this.bolsa.UseVisualStyleBackColor = false;
+            this.bolsa.Click += new System.EventHandler(this.bolsa_Click);
+            // 
+            // huir
+            // 
+            this.huir.BackColor = System.Drawing.Color.Transparent;
+            this.huir.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.HUIR;
+            this.huir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.huir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.huir.FlatAppearance.BorderSize = 0;
+            this.huir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.huir.Location = new System.Drawing.Point(1038, 590);
+            this.huir.Name = "huir";
+            this.huir.Size = new System.Drawing.Size(195, 56);
+            this.huir.TabIndex = 5;
+            this.huir.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(134, 190);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(171, 147);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(836, 276);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(171, 147);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(70, 547);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(176, 17);
+            this.progressBar1.TabIndex = 8;
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(1009, 118);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(176, 17);
+            this.progressBar2.TabIndex = 9;
+            // 
             // Form_BATALLA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1263, 652);
+            this.Controls.Add(this.progressBar2);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.huir);
+            this.Controls.Add(this.bolsa);
+            this.Controls.Add(this.pokemon);
+            this.Controls.Add(this.luchar);
             this.Controls.Add(this.minimizar);
             this.Controls.Add(this.cerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -73,6 +181,8 @@
             this.Load += new System.EventHandler(this.Form_BATALLA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -81,5 +191,13 @@
 
         private System.Windows.Forms.PictureBox cerrar;
         private System.Windows.Forms.PictureBox minimizar;
+        private System.Windows.Forms.Button luchar;
+        private System.Windows.Forms.Button pokemon;
+        private System.Windows.Forms.Button bolsa;
+        private System.Windows.Forms.Button huir;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar2;
     }
 }

@@ -66,5 +66,23 @@ namespace BatallaPokemon_juego
             }
             this.BackgroundImageLayout = ImageLayout.Stretch; //PARA AJUSTAR LAS IMAGENES AL TAMAÑO DEL FORMULARIO
         }
+
+        private void luchar_Click(object sender, EventArgs e)
+        {
+            LUCHA FormLucha = new LUCHA();
+            FormLucha.ShowDialog();
+        }
+
+        private void pokemon_Click(object sender, EventArgs e)
+        {
+            BtnPOKEMON FormBtnPOKEMON = new BtnPOKEMON();
+            FormBtnPOKEMON.ShowDialog();
+        }
+
+        private void bolsa_Click(object sender, EventArgs e)
+        {
+            BOLSA FormBOLSA = new BOLSA();
+            FormBOLSA.ShowDialog();
+        }
     }
 }
