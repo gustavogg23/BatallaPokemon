@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,6 +66,22 @@ namespace BatallaPokemon_juego
                     break;
             }
             this.BackgroundImageLayout = ImageLayout.Stretch; //PARA AJUSTAR LAS IMAGENES AL TAMAÑO DEL FORMULARIO
+
+            // Se obtienen los pokemones de cada jugador
+            Pokemon pokemonJugador1 = batalla.getPokemonActivo1();
+            Pokemon pokemonJugador2 = batalla.getPokemonActivo2();
+
+            // Se establecen las imágenes de los pokemones de cada jugador
+            try
+            {
+                string rutaProyecto = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."));
+                pictureBox1.Image = Image.FromFile(Path.Combine(rutaProyecto, "Resources", $"{pokemonJugador1.getImagenEspalda()}.gif"));
+                pictureBox2.Image = Image.FromFile(Path.Combine(rutaProyecto, "Resources", $"{pokemonJugador2.getImagenFrente()}.gif"));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void luchar_Click(object sender, EventArgs e)

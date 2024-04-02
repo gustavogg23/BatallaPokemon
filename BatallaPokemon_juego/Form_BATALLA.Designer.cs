@@ -76,6 +76,8 @@
             this.luchar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.luchar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.luchar.FlatAppearance.BorderSize = 0;
+            this.luchar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.luchar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.luchar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.luchar.Location = new System.Drawing.Point(1038, 406);
             this.luchar.Name = "luchar";
@@ -91,6 +93,8 @@
             this.pokemon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pokemon.FlatAppearance.BorderSize = 0;
+            this.pokemon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.pokemon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.pokemon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pokemon.Location = new System.Drawing.Point(1038, 467);
             this.pokemon.Name = "pokemon";
@@ -106,6 +110,8 @@
             this.bolsa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bolsa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bolsa.FlatAppearance.BorderSize = 0;
+            this.bolsa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bolsa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bolsa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bolsa.Location = new System.Drawing.Point(1038, 529);
             this.bolsa.Name = "bolsa";
@@ -121,6 +127,8 @@
             this.huir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.huir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.huir.FlatAppearance.BorderSize = 0;
+            this.huir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.huir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.huir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.huir.Location = new System.Drawing.Point(1038, 590);
             this.huir.Name = "huir";
@@ -130,17 +138,21 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(134, 190);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(415, 361);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(171, 147);
+            this.pictureBox1.Size = new System.Drawing.Size(285, 285);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(836, 276);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(763, 238);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(171, 147);
+            this.pictureBox2.Size = new System.Drawing.Size(285, 285);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
@@ -163,14 +175,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1263, 652);
+            this.Controls.Add(this.pokemon);
+            this.Controls.Add(this.luchar);
             this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.huir);
             this.Controls.Add(this.bolsa);
-            this.Controls.Add(this.pokemon);
-            this.Controls.Add(this.luchar);
             this.Controls.Add(this.minimizar);
             this.Controls.Add(this.cerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
