@@ -21,7 +21,6 @@ namespace BatallaPokemon_juego
             // Se inicializa la batalla
             batalla = new Batalla(LOGIN.DatosJugadores.player1, LOGIN.DatosJugadores.player2);
         }
-
         private void cerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -56,9 +55,6 @@ namespace BatallaPokemon_juego
                     this.BackgroundImage = Properties.Resources.FondoBatalla5;
                     break;
                 case 6:
-                    this.BackgroundImage = Properties.Resources.FondoBatalla6;
-                    break;
-                case 7:
                     this.BackgroundImage = Properties.Resources.FondoBatalla7;
                     break;
                 default:
@@ -67,16 +63,18 @@ namespace BatallaPokemon_juego
             }
             this.BackgroundImageLayout = ImageLayout.Stretch; //PARA AJUSTAR LAS IMAGENES AL TAMAÑO DEL FORMULARIO
 
-            // Se obtienen los pokemones de cada jugador
             Pokemon pokemonJugador1 = batalla.getPokemonActivo1();
             Pokemon pokemonJugador2 = batalla.getPokemonActivo2();
 
-            // Se establecen las imágenes de los pokemones de cada jugador
+            //Se establecen las imagenes de los pokemones de cada jugador
             try
             {
                 string rutaProyecto = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."));
                 pictureBox1.Image = Image.FromFile(Path.Combine(rutaProyecto, "Resources", $"{pokemonJugador1.getImagenEspalda()}.gif"));
                 pictureBox2.Image = Image.FromFile(Path.Combine(rutaProyecto, "Resources", $"{pokemonJugador2.getImagenFrente()}.gif"));
+
+                nombrePokemon1.Text = pokemonJugador1.getNombre();
+                nombrePokemon2.Text = pokemonJugador2.getNombre();
             }
             catch (Exception ex)
             {
@@ -87,6 +85,14 @@ namespace BatallaPokemon_juego
         private void luchar_Click(object sender, EventArgs e)
         {
             LUCHA FormLucha = new LUCHA();
+            FormLucha.StartPosition = FormStartPosition.Manual; // Establece la posición manualmente
+            FormLucha.TopMost = true; // Asegura de que esté por encima de otros formularios
+
+            // Calcular la posición para mostrar el formulario LUCHA centrado en la parte inferior
+            int posX = this.Left + (this.Width - FormLucha.Width) / 2;
+            int posY = this.Top + this.Height - FormLucha.Height;
+
+            FormLucha.Location = new Point(posX, posY);
             FormLucha.ShowDialog();
         }
 

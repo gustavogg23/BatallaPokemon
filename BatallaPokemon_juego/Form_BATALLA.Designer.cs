@@ -37,8 +37,12 @@
             this.huir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.barraVida1 = new System.Windows.Forms.ProgressBar();
+            this.barraVida2 = new System.Windows.Forms.ProgressBar();
+            this.nombrePokemon2 = new System.Windows.Forms.TextBox();
+            this.nombrePokemon1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -48,7 +52,7 @@
             // cerrar
             // 
             this.cerrar.BackColor = System.Drawing.Color.Transparent;
-            this.cerrar.Image = global::BatallaPokemon_juego.Properties.Resources.salir;
+            this.cerrar.Image = ((System.Drawing.Image)(resources.GetObject("cerrar.Image")));
             this.cerrar.Location = new System.Drawing.Point(1221, 12);
             this.cerrar.Name = "cerrar";
             this.cerrar.Size = new System.Drawing.Size(30, 30);
@@ -60,7 +64,7 @@
             // minimizar
             // 
             this.minimizar.BackColor = System.Drawing.Color.Transparent;
-            this.minimizar.Image = global::BatallaPokemon_juego.Properties.Resources.Minimizar;
+            this.minimizar.Image = ((System.Drawing.Image)(resources.GetObject("minimizar.Image")));
             this.minimizar.Location = new System.Drawing.Point(1170, 12);
             this.minimizar.Name = "minimizar";
             this.minimizar.Size = new System.Drawing.Size(30, 30);
@@ -72,12 +76,10 @@
             // luchar
             // 
             this.luchar.BackColor = System.Drawing.Color.Transparent;
-            this.luchar.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.LUCHAR;
+            this.luchar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("luchar.BackgroundImage")));
             this.luchar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.luchar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.luchar.FlatAppearance.BorderSize = 0;
-            this.luchar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.luchar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.luchar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.luchar.Location = new System.Drawing.Point(1038, 406);
             this.luchar.Name = "luchar";
@@ -93,8 +95,6 @@
             this.pokemon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pokemon.FlatAppearance.BorderSize = 0;
-            this.pokemon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.pokemon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.pokemon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pokemon.Location = new System.Drawing.Point(1038, 467);
             this.pokemon.Name = "pokemon";
@@ -110,8 +110,6 @@
             this.bolsa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bolsa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bolsa.FlatAppearance.BorderSize = 0;
-            this.bolsa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.bolsa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bolsa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bolsa.Location = new System.Drawing.Point(1038, 529);
             this.bolsa.Name = "bolsa";
@@ -123,12 +121,10 @@
             // huir
             // 
             this.huir.BackColor = System.Drawing.Color.Transparent;
-            this.huir.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.HUIR;
+            this.huir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("huir.BackgroundImage")));
             this.huir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.huir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.huir.FlatAppearance.BorderSize = 0;
-            this.huir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.huir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.huir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.huir.Location = new System.Drawing.Point(1038, 590);
             this.huir.Name = "huir";
@@ -139,52 +135,93 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(415, 361);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(364, 441);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(285, 285);
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(763, 238);
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(880, 324);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(285, 285);
+            this.pictureBox2.Size = new System.Drawing.Size(200, 200);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // progressBar1
+            // barraVida1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(70, 547);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(176, 17);
-            this.progressBar1.TabIndex = 8;
+            this.barraVida1.Location = new System.Drawing.Point(70, 547);
+            this.barraVida1.Name = "barraVida1";
+            this.barraVida1.Size = new System.Drawing.Size(176, 17);
+            this.barraVida1.TabIndex = 8;
             // 
-            // progressBar2
+            // barraVida2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(1009, 118);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(176, 17);
-            this.progressBar2.TabIndex = 9;
+            this.barraVida2.Location = new System.Drawing.Point(1009, 94);
+            this.barraVida2.Name = "barraVida2";
+            this.barraVida2.Size = new System.Drawing.Size(176, 17);
+            this.barraVida2.TabIndex = 9;
+            // 
+            // nombrePokemon2
+            // 
+            this.nombrePokemon2.BackColor = System.Drawing.Color.White;
+            this.nombrePokemon2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombrePokemon2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombrePokemon2.Location = new System.Drawing.Point(1009, 68);
+            this.nombrePokemon2.Name = "nombrePokemon2";
+            this.nombrePokemon2.Size = new System.Drawing.Size(176, 19);
+            this.nombrePokemon2.TabIndex = 10;
+            this.nombrePokemon2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // nombrePokemon1
+            // 
+            this.nombrePokemon1.BackColor = System.Drawing.Color.White;
+            this.nombrePokemon1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.nombrePokemon1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombrePokemon1.Location = new System.Drawing.Point(70, 521);
+            this.nombrePokemon1.Name = "nombrePokemon1";
+            this.nombrePokemon1.Size = new System.Drawing.Size(176, 19);
+            this.nombrePokemon1.TabIndex = 11;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(49, 513);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(221, 58);
+            this.panel1.TabIndex = 12;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Location = new System.Drawing.Point(984, 60);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(221, 58);
+            this.panel2.TabIndex = 13;
             // 
             // Form_BATALLA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1263, 652);
+            this.Controls.Add(this.nombrePokemon1);
+            this.Controls.Add(this.nombrePokemon2);
             this.Controls.Add(this.pokemon);
             this.Controls.Add(this.luchar);
-            this.Controls.Add(this.progressBar2);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.barraVida2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.barraVida1);
             this.Controls.Add(this.huir);
             this.Controls.Add(this.bolsa);
             this.Controls.Add(this.minimizar);
             this.Controls.Add(this.cerrar);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Form_BATALLA";
@@ -196,6 +233,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -207,9 +245,13 @@
         private System.Windows.Forms.Button pokemon;
         private System.Windows.Forms.Button bolsa;
         private System.Windows.Forms.Button huir;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ProgressBar barraVida1;
+        private System.Windows.Forms.ProgressBar barraVida2;
+        private System.Windows.Forms.TextBox nombrePokemon2;
+        private System.Windows.Forms.TextBox nombrePokemon1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

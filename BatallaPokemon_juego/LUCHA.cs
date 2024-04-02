@@ -16,5 +16,6 @@ namespace BatallaPokemon_juego
         {
             InitializeComponent();
         }
+
     }
 }

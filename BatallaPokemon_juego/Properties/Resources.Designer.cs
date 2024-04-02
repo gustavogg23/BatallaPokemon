@@ -1203,16 +1203,6 @@ namespace BatallaPokemon_juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FondoBatalla6 {
-            get {
-                object obj = ResourceManager.GetObject("FondoBatalla6", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap FondoBatalla7 {
             get {
                 object obj = ResourceManager.GetObject("FondoBatalla7", resourceCulture);

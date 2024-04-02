@@ -38,6 +38,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "LUCHA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "LUCHA";
             this.ResumeLayout(false);
 
