@@ -160,6 +160,7 @@
             // 
             // barraVida1
             // 
+            this.barraVida1.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.barraVida1.Location = new System.Drawing.Point(70, 547);
             this.barraVida1.Name = "barraVida1";
             this.barraVida1.Size = new System.Drawing.Size(176, 17);
@@ -167,6 +168,7 @@
             // 
             // barraVida2
             // 
+            this.barraVida2.ForeColor = System.Drawing.Color.MediumSpringGreen;
             this.barraVida2.Location = new System.Drawing.Point(1009, 94);
             this.barraVida2.Name = "barraVida2";
             this.barraVida2.Size = new System.Drawing.Size(176, 17);

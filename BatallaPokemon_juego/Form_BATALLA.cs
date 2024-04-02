@@ -76,8 +76,15 @@ namespace BatallaPokemon_juego
                 pictureBox1.Image = Image.FromFile(Path.Combine(rutaProyecto, "Resources", $"{pokemonJugador1.getImagenEspalda()}.gif"));
                 pictureBox2.Image = Image.FromFile(Path.Combine(rutaProyecto, "Resources", $"{pokemonJugador2.getImagenFrente()}.gif"));
 
+                // Se establece el nombre de los pokemones
                 nombrePokemon1.Text = pokemonJugador1.getNombre();
                 nombrePokemon2.Text = pokemonJugador2.getNombre();
+
+                // Se inicializan las barras de vida de ambos pokemones
+                barraVida1.Maximum = pokemonJugador1.getVidaMax();
+                barraVida1.Value = pokemonJugador1.getVida();
+                barraVida2.Maximum = pokemonJugador2.getVidaMax();
+                barraVida2.Value = pokemonJugador2.getVida();
             }
             catch (Exception ex)
             {
@@ -99,9 +106,11 @@ namespace BatallaPokemon_juego
             FormLucha.ShowDialog();
         }
 
+        // Botón para cambiar de pokemon
         private void pokemon_Click(object sender, EventArgs e)
         {
             BtnPOKEMON FormBtnPOKEMON = new BtnPOKEMON();
+            FormBtnPOKEMON.FormClosed += (s, args) => ActualizarInfoPokemon();
             FormBtnPOKEMON.ShowDialog();
         }
 
@@ -109,6 +118,36 @@ namespace BatallaPokemon_juego
         {
             BOLSA FormBOLSA = new BOLSA();
             FormBOLSA.ShowDialog();
+        }
+
+        // Método para actualizar la información de los pokemones
+        public void ActualizarInfoPokemon()
+        {
+            // Se obtiene la información de los pokemones activos de cada jugador
+            Pokemon pokemonJugador1 = InfoBatalla.batalla.getPokemonActivo1();
+            Pokemon pokemonJugador2 = InfoBatalla.batalla.getPokemonActivo2();
+
+            //Se establecen las imagenes de los pokemones de cada jugador
+            try
+            {
+                string rutaProyecto = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."));
+                pictureBox1.Image = Image.FromFile(Path.Combine(rutaProyecto, "Resources", $"{pokemonJugador1.getImagenEspalda()}.gif"));
+                pictureBox2.Image = Image.FromFile(Path.Combine(rutaProyecto, "Resources", $"{pokemonJugador2.getImagenFrente()}.gif"));
+
+                // Se actualiza el nombre de los pokemones
+                nombrePokemon1.Text = pokemonJugador1.getNombre();
+                nombrePokemon2.Text = pokemonJugador2.getNombre();
+
+                // Se actualiza la barra de vida de los pokemones
+                barraVida1.Maximum = pokemonJugador1.getVidaMax();
+                barraVida1.Value = pokemonJugador1.getVida();
+                barraVida2.Maximum = pokemonJugador2.getVidaMax();
+                barraVida2.Value = pokemonJugador2.getVida();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

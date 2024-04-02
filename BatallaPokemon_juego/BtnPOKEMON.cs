@@ -19,7 +19,7 @@ namespace BatallaPokemon_juego
             InitializeComponent();
         }
 
-        private void BotonesPokemo()
+        private void BotonesPokemon()
         {
             panelBtnPokemones.Controls.Clear();
 
@@ -52,6 +52,9 @@ namespace BatallaPokemon_juego
                     // Se cambia el pokemon en turno al presionar el botón
                     InfoBatalla.batalla.CambiarPokemon(pokemon.getNumero());
 
+                    // Se dispara el evento PokemonCambiado
+                    PokemonCambiado?.Invoke(this, EventArgs.Empty);
+
                     // Se muestra mensaje mostrando que pokemon se seleccionó
                     MessageBox.Show("Se seleccionó el pokemon " + pokemon.getNombre());
 
@@ -66,7 +69,10 @@ namespace BatallaPokemon_juego
         private void BtnPOKEMON_Load(object sender, EventArgs e)
         {
             // Se crean los botones de los pokemones
-            BotonesPokemo();
+            BotonesPokemon();
         }
+
+        public delegate void PokemonCambiadoEventHandler(object sender, EventArgs e);
+        public event PokemonCambiadoEventHandler PokemonCambiado;
     }
 }
