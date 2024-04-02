@@ -95,6 +95,7 @@ namespace BatallaPokemon_juego
         private void luchar_Click(object sender, EventArgs e)
         {
             LUCHA FormLucha = new LUCHA();
+            FormLucha.AtaqueRealizado += (s, args) => ActualizarInfoPokemon();
             FormLucha.StartPosition = FormStartPosition.Manual; // Establece la posición manualmente
             FormLucha.TopMost = true; // Asegura de que esté por encima de otros formularios
 

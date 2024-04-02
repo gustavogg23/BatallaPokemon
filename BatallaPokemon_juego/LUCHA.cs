@@ -49,6 +49,9 @@ namespace BatallaPokemon_juego
                     // Se llama al método Atacar de la batalla al presionar el botón
                     InfoBatalla.batalla.atacar(indiceAtaque);
 
+                    // Se actualiza la información de los pokemones
+                    AtaqueRealizado?.Invoke(this, EventArgs.Empty);
+
                     this.Close();
                 };
 
@@ -62,5 +65,8 @@ namespace BatallaPokemon_juego
             // Se crean los botones de los ataques
             BotonesAtaques();
         }
+
+        public delegate void AtaqueRealizadoEventHandler(object sender, EventArgs e);
+        public event AtaqueRealizadoEventHandler AtaqueRealizado;
     }
 }
