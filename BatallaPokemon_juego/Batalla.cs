@@ -138,42 +138,59 @@ namespace BatallaPokemon_juego
             Pokemon atacante = (turno == 1) ? pokemonActivo1 : pokemonActivo2;
             Pokemon defensor = (turno == 1) ? pokemonActivo2 : pokemonActivo1;
 
-            // Se obtiene el ataque seleccionado por el atacante
-            Ataque ataque = atacante.getAtaques()[indiceAtaque];
 
-            // Se calcula el daño en base al ataque del atacante y la defensa del defensor
-            int dmg = atacante.getAtaque() - defensor.getDefensa();
-
-            // Para que siempre haya 1 como mínimo de daño
-            dmg = Math.Max(dmg, 1);
-
-            // Se calcula el multiplicador de efectividad del ataque
-            decimal multEfectividad = CalcularEfectividadAtaque(ataque.getTipo(), defensor.getTipo1(), defensor.getTipo2());
-
-            // Se aplica el multiplicador de efectividad al daño
-            dmg = (int)Math.Round(dmg * multEfectividad);
-
-            // Se genera un número al azar entre el 0 y el 100 para determinar si el ataque es crítico
-            Random chanceCritico = new Random();
-            if (chanceCritico.Next(0, 100) < 10) // Si el número es menor a 10 el ataque es crítico
+            // Verifica si el índice del ataque está dentro del rango válido
+            if (indiceAtaque >= 0 && indiceAtaque < atacante.getAtaques().Length)
             {
-                dmg *= 3; // Se triplica el daño causado
-            }
+                // Se obtiene el ataque seleccionado por el atacante
+                Ataque ataque = atacante.getAtaques()[indiceAtaque];
 
-            // Se aplica el daño a la estadística de vida del defensor
-            defensor.setVida(defensor.getVida() - dmg);
+                // Se calcula el daño en base al ataque del atacante y la defensa del defensor
+                int dmg = atacante.getAtaque() - defensor.getDefensa();
 
-            // Se aplica efecto del ataque
-            if (ataque.getEfecto() != "Ninguno")
-            {
-                AplicarEfectoAtaque(indiceAtaque);
-            }
+                // Para que siempre haya 1 como mínimo de daño
+                dmg = Math.Max(dmg, 1);
 
-            // Si luego del ataque la vida del defensor es 0 o menor a 0 se elimina el pokemon de la lista de pokemones del entrenador
-            if (defensor.getVida() <= 0)
-            {
-                getEntrenadorNoTurno().getPokemones().eliminar(defensor.getNumero());
+                // Se calcula el multiplicador de efectividad del ataque
+                decimal multEfectividad = CalcularEfectividadAtaque(ataque.getTipo(), defensor.getTipo1(), defensor.getTipo2());
 
+                // Se aplica el multiplicador de efectividad al daño
+                dmg = (int)Math.Round(dmg * multEfectividad);
+
+                // Se genera un número al azar entre el 0 y el 100 para determinar si el ataque es crítico
+                Random chanceCritico = new Random();
+                if (chanceCritico.Next(0, 100) < 10) // Si el número es menor a 10 el ataque es crítico
+                {
+                    dmg *= 3; // Se triplica el daño causado
+                }
+
+                // Se aplica el daño a la estadística de vida del defensor
+                defensor.setVida(defensor.getVida() - dmg);
+
+                // Se aplica efecto del ataque
+                if (ataque.getEfecto() != "Ninguno")
+                {
+                    AplicarEfectoAtaque(indiceAtaque);
+                }
+
+                // Si luego del ataque la vida del defensor es 0 o menor a 0 se elimina el pokemon de la lista de pokemones del entrenador
+                if (defensor.getVida() <= 0)
+                {
+                    getEntrenadorNoTurno().getPokemones().eliminar(defensor.getNumero());
+
+                    // Se verifica si la batalla ha terminado
+                    if (BatallaTerminada())
+                    {
+                        Entrenador ganador = Ganador(); // Se obtiene al ganador de la batalla
+                        ganador.setVictorias(ganador.getVictorias() + 1); // Se le suma una victoria al ganador
+                    }
+                }
+
+                // Se cambia el turno
+                cambiarTurno();
+
+                // Se aplica el efecto del estado alterado
+                AplicarEfectoEstado();
                 // Se verifica si la batalla ha terminado
                 if (BatallaTerminada())
                 {
@@ -181,17 +198,9 @@ namespace BatallaPokemon_juego
                     ganador.setVictorias(ganador.getVictorias() + 1); // Se le suma una victoria al ganador
                 }
             }
-
-            // Se cambia el turno
-            cambiarTurno();
-
-            // Se aplica el efecto del estado alterado
-            AplicarEfectoEstado();
-            // Se verifica si la batalla ha terminado
-            if (BatallaTerminada())
+            else
             {
-                Entrenador ganador = Ganador(); // Se obtiene al ganador de la batalla
-                ganador.setVictorias(ganador.getVictorias() + 1); // Se le suma una victoria al ganador
+                Console.WriteLine("Índice de ataque fuera de rango" + indiceAtaque);
             }
         }
 

@@ -28,22 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panelAtaques = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
+            // 
+            // panelAtaques
+            // 
+            this.panelAtaques.BackColor = System.Drawing.Color.LightCoral;
+            this.panelAtaques.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelAtaques.Location = new System.Drawing.Point(0, 0);
+            this.panelAtaques.Name = "panelAtaques";
+            this.panelAtaques.Size = new System.Drawing.Size(315, 115);
+            this.panelAtaques.TabIndex = 0;
             // 
             // LUCHA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(449, 170);
+            this.ClientSize = new System.Drawing.Size(315, 115);
+            this.Controls.Add(this.panelAtaques);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "LUCHA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "LUCHA";
+            this.Load += new System.EventHandler(this.LUCHA_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel panelAtaques;
     }
 }
