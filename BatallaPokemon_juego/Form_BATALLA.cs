@@ -13,13 +13,16 @@ namespace BatallaPokemon_juego
 {
     public partial class Form_BATALLA : Form
     {
-        private Batalla batalla;
+        public static class InfoBatalla
+        {
+            public static Batalla batalla;
+        }
         public Form_BATALLA()
         {
             InitializeComponent();
 
             // Se inicializa la batalla
-            batalla = new Batalla(LOGIN.DatosJugadores.player1, LOGIN.DatosJugadores.player2);
+            InfoBatalla.batalla = new Batalla(LOGIN.DatosJugadores.player1, LOGIN.DatosJugadores.player2);
         }
         private void cerrar_Click(object sender, EventArgs e)
         {
@@ -63,8 +66,8 @@ namespace BatallaPokemon_juego
             }
             this.BackgroundImageLayout = ImageLayout.Stretch; //PARA AJUSTAR LAS IMAGENES AL TAMAÑO DEL FORMULARIO
 
-            Pokemon pokemonJugador1 = batalla.getPokemonActivo1();
-            Pokemon pokemonJugador2 = batalla.getPokemonActivo2();
+            Pokemon pokemonJugador1 = InfoBatalla.batalla.getPokemonActivo1();
+            Pokemon pokemonJugador2 = InfoBatalla.batalla.getPokemonActivo2();
 
             //Se establecen las imagenes de los pokemones de cada jugador
             try

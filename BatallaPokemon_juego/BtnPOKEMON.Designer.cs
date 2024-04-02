@@ -28,20 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panelBtnPokemones = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
+            // 
+            // panelBtnPokemones
+            // 
+            this.panelBtnPokemones.BackColor = System.Drawing.Color.DarkCyan;
+            this.panelBtnPokemones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBtnPokemones.Location = new System.Drawing.Point(0, 0);
+            this.panelBtnPokemones.Name = "panelBtnPokemones";
+            this.panelBtnPokemones.Size = new System.Drawing.Size(160, 335);
+            this.panelBtnPokemones.TabIndex = 0;
             // 
             // BtnPOKEMON
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 278);
+            this.ClientSize = new System.Drawing.Size(160, 335);
+            this.Controls.Add(this.panelBtnPokemones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "BtnPOKEMON";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "BtnPOKEMON";
+            this.Load += new System.EventHandler(this.BtnPOKEMON_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel panelBtnPokemones;
     }
 }

@@ -80,6 +80,8 @@
             this.luchar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.luchar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.luchar.FlatAppearance.BorderSize = 0;
+            this.luchar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.luchar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.luchar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.luchar.Location = new System.Drawing.Point(1038, 406);
             this.luchar.Name = "luchar";
@@ -95,6 +97,8 @@
             this.pokemon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pokemon.FlatAppearance.BorderSize = 0;
+            this.pokemon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.pokemon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.pokemon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pokemon.Location = new System.Drawing.Point(1038, 467);
             this.pokemon.Name = "pokemon";
@@ -110,6 +114,8 @@
             this.bolsa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bolsa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bolsa.FlatAppearance.BorderSize = 0;
+            this.bolsa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.bolsa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.bolsa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bolsa.Location = new System.Drawing.Point(1038, 529);
             this.bolsa.Name = "bolsa";

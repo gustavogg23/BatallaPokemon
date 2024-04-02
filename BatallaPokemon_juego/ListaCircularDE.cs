@@ -136,11 +136,12 @@ namespace BatallaPokemon_juego
         }
 
         // Método para recorrer la lista
-        public void recorrer()
+        public void recorrer(Action<Pokemon> action)
         {
             NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
             do // Bucle para recorrer la lista
             {
+                action(aux.getValor()); // Se ejecuta la acción
                 aux = aux.getSiguiente(); // Se pasa al siguiente nodo
             } 
             while (aux != cabeza); // Mientras el nodo auxiliar no sea la cabeza
