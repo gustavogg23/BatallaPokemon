@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,10 +47,29 @@ namespace BatallaPokemon_juego
                 int indiceAtaque = i;
 
                 // Se agrega el evento click al botón
-                btnAtaque.Click += (s, e) =>
+                btnAtaque.Click += async (s, e) =>
                 {
                     // Se llama al método Atacar de la batalla al presionar el botón
                     InfoBatalla.batalla.atacar(indiceAtaque);
+
+                    string rutaAtaque = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.."));
+                    string rutaImagenAtaque = Path.Combine(rutaAtaque, "Resources", $"{ataque.getImagen()}.gif");
+
+                    Form_BATALLA.pictureBoxAtaque1.Image = Image.FromFile(rutaImagenAtaque);
+                    Form_BATALLA.pictureBoxAtaque2.Image = Image.FromFile(rutaImagenAtaque);
+
+                    if (entrenadorTurno == InfoBatalla.batalla.getEntrenador1())
+                    {
+                        Form_BATALLA.pictureBoxAtaque2.Visible = true;
+                    }
+                    else
+                    {
+                        Form_BATALLA.pictureBoxAtaque1.Visible = true;
+                    }
+
+                    await Task.Delay(2000);
+                    Form_BATALLA.pictureBoxAtaque1.Visible = false;
+                    Form_BATALLA.pictureBoxAtaque2.Visible = false;
 
                     // Se verifica si la vida del pokemon en turno es menor o igual a 0
                     if (pokemonNoTurno.getVida() <= 0)

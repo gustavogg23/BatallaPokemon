@@ -13,6 +13,9 @@ namespace BatallaPokemon_juego
 {
     public partial class Form_BATALLA : Form
     {
+
+        public static PictureBox pictureBoxAtaque1 = new PictureBox();
+        public static PictureBox pictureBoxAtaque2 = new PictureBox();
         public static class InfoBatalla
         {
             public static Batalla batalla;
@@ -36,6 +39,22 @@ namespace BatallaPokemon_juego
 
         private void Form_BATALLA_Load(object sender, EventArgs e)
         {
+            pictureBoxAtaque1.Size = pictureBox1.Size;
+            pictureBoxAtaque1.Location = pictureBox1.Location;
+            pictureBoxAtaque1.BackColor = Color.Transparent;
+            pictureBoxAtaque1.SizeMode = PictureBoxSizeMode.CenterImage;
+            this.Controls.Add(pictureBoxAtaque1);
+            pictureBoxAtaque1.BringToFront();
+            pictureBoxAtaque1.Visible = false;
+
+            pictureBoxAtaque2.Size = pictureBox2.Size;
+            pictureBoxAtaque2.Location = pictureBox2.Location;
+            pictureBoxAtaque2.BackColor = Color.Transparent;
+            pictureBoxAtaque2.SizeMode = PictureBoxSizeMode.CenterImage;
+            this.Controls.Add(pictureBoxAtaque2);
+            pictureBoxAtaque2.BringToFront();
+            pictureBoxAtaque2.Visible = false;
+
             Random ImgRandom = new Random();
             int randomImagen = ImgRandom.Next(1, 7); //RANGO DE IMAGENES QUE ESTAN DISPONIBLES
 
@@ -124,6 +143,7 @@ namespace BatallaPokemon_juego
         // Método para actualizar la información de los pokemones
         public void ActualizarInfoPokemon()
         {
+            
             // Se obtiene la información de los pokemones activos de cada jugador
             Pokemon pokemonJugador1 = InfoBatalla.batalla.getPokemonActivo1();
             Pokemon pokemonJugador2 = InfoBatalla.batalla.getPokemonActivo2();
