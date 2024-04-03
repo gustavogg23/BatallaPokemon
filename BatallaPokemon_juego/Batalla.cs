@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace BatallaPokemon_juego
 {
@@ -192,6 +193,10 @@ namespace BatallaPokemon_juego
                 {
                     Entrenador ganador = Ganador(); // Se obtiene al ganador de la batalla
                     ganador.setVictorias(ganador.getVictorias() + 1); // Se le suma una victoria al ganador
+                                                                      // Muestra un mensaje con el nombre del ganador
+                    MessageBox.Show("¡La batalla ha terminado! El ganador es: " + ganador.getNombre());
+                    // Aquí se guarda la información de la batalla en un archivo
+                    BarraCarga.DatosListas.listaJugadores.GuardarInfoJugadores();
                 }
             }
             else

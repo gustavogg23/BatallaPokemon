@@ -55,5 +55,10 @@ namespace BatallaPokemon_juego
             Form_TORNEO torneo = new Form_TORNEO();
             torneo.ShowDialog();
         }
+
+        private void rankingBoton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

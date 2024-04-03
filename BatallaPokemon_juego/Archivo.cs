@@ -37,6 +37,16 @@ namespace BatallaPokemon_juego
             escritor.Close(); // Se cierra el archivo
         }
 
+        public void Sobreescribir(string ruta, string texto)
+        {
+            StreamWriter escritor; // Objeto para escribir en el archivo
+
+            // Si el archivo ya existe, se sobreescribe
+            escritor = new StreamWriter(ruta);
+
+            escritor.WriteLine(texto); // Se escribe el texto en el archivo
+            escritor.Close(); // Se cierra el archivo
+        }
         // Método para leer un archivo de texto
         public string[] Leer()
         {

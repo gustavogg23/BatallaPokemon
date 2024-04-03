@@ -75,5 +75,25 @@ namespace BatallaPokemon_juego
             }
             return null; // Si no se encuentra el jugador, se retorna nulo
         }
+
+        public void GuardarInfoJugadores()
+        {
+            NodoJugador aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+            string infoJugadores = ""; // Se crea una cadena para guardar la información de todos los jugadores
+
+            while (aux != null) // Mientras el nodo auxiliar no sea nulo
+            {
+                // Se agrega la información del jugador al final de la cadena
+                infoJugadores += aux.getValor().mostrarInfo() + "\n";
+
+                aux = aux.getSiguiente(); // Se pasa al siguiente nodo
+            }
+
+            // Se crea un objeto de la clase Archivo
+            Archivo archivo = new Archivo("Jugadores.txt");
+
+            // Se sobreescribe la información de todos los jugadores en el archivo
+            archivo.Sobreescribir("Jugadores.txt", infoJugadores);
+        }
     }
 }

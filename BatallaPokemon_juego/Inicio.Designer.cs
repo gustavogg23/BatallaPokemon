@@ -87,6 +87,7 @@
             this.rankingBoton.Size = new System.Drawing.Size(190, 62);
             this.rankingBoton.TabIndex = 2;
             this.rankingBoton.UseVisualStyleBackColor = false;
+            this.rankingBoton.Click += new System.EventHandler(this.rankingBoton_Click);
             // 
             // salir
             // 

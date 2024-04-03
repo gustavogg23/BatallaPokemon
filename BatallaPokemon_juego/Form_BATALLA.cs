@@ -181,6 +181,7 @@ namespace BatallaPokemon_juego
 
             // Cerrar el formulario actual y mostrar el menú de inicio
             this.Close();
+            BarraCarga.DatosListas.listaJugadores.GuardarInfoJugadores();
 
             // Verificar si el formulario de inicio ya está creado
             inicio formInicio = Application.OpenForms["inicio"] as inicio;
