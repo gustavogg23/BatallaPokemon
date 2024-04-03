@@ -215,7 +215,19 @@ namespace BatallaPokemon_juego
 
         private void cerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            // Cerrar el formulario actual y mostrar el menú de inicio
+            this.Close();
+
+            // Verificar si el formulario de inicio ya está creado
+            inicio formInicio = Application.OpenForms["inicio"] as inicio;
+
+            if (formInicio == null)
+            {
+                formInicio = new inicio();
+            }
+
+            // Mostrar el formulario de inicio sin la barra de carga
+            formInicio.Show();
         }
 
         private void minimizar_Click(object sender, EventArgs e)

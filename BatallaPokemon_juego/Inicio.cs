@@ -47,5 +47,13 @@ namespace BatallaPokemon_juego
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void torneoBoton_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+
+            Form_TORNEO torneo = new Form_TORNEO();
+            torneo.ShowDialog();
+        }
     }
 }

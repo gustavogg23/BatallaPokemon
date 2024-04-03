@@ -143,7 +143,7 @@ namespace BatallaPokemon_juego
             {
                 action(aux.getValor()); // Se ejecuta la acción
                 aux = aux.getSiguiente(); // Se pasa al siguiente nodo
-            } 
+            }
             while (aux != cabeza); // Mientras el nodo auxiliar no sea la cabeza
         }
 

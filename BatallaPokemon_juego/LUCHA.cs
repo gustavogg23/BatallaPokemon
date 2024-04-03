@@ -56,7 +56,7 @@ namespace BatallaPokemon_juego
                     {
                         MessageBox.Show("El pokemon " + pokemonNoTurno.getNombre() + " ha sido derrotado");
                         InfoBatalla.batalla.CambiarASiguientePokemon();
-                        entrenadorNoTurno.getPokemones().eliminar(pokemonNoTurno.getNumero());                        
+                        entrenadorNoTurno.getPokemones().eliminar(pokemonNoTurno.getNumero());
                     }
 
                     // Se actualiza la información de los pokemones

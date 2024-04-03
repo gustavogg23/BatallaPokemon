@@ -150,5 +150,25 @@ namespace BatallaPokemon_juego
                 Console.WriteLine(ex.Message);
             }
         }
+
+        private void huir_Click(object sender, EventArgs e)
+        {
+            // Mostrar un mensaje al hacer clic en "HUIR"
+            MessageBox.Show("El jugador se ha rendido, el ganador es: [Nombre del ganador]");
+
+            // Cerrar el formulario actual y mostrar el menú de inicio
+            this.Close();
+
+            // Verificar si el formulario de inicio ya está creado
+            inicio formInicio = Application.OpenForms["inicio"] as inicio;
+
+            if (formInicio == null)
+            {
+                formInicio = new inicio();
+            }
+
+            // Mostrar el formulario de inicio sin la barra de carga
+            formInicio.Show();
+        }
     }
 }

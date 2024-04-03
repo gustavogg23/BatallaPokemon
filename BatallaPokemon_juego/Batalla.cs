@@ -571,7 +571,7 @@ namespace BatallaPokemon_juego
                         if (turno == 1)
                         {
                             decimal precision = pokemonActivo1.getAtaque() * 0.22m;
-                            pokemonActivo1.setAtaque((int) Math.Round(pokemonActivo1.getAtaque() + precision));
+                            pokemonActivo1.setAtaque((int)Math.Round(pokemonActivo1.getAtaque() + precision));
                         }
                         else
                         {

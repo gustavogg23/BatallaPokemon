@@ -86,6 +86,12 @@
     <Compile Include="Form_BATALLA.Designer.cs">
       <DependentUpon>Form_BATALLA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_TORNEO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_TORNEO.Designer.cs">
+      <DependentUpon>Form_TORNEO.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,18 @@
     </Compile>
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_4.Designer.cs">
+      <DependentUpon>LOGIN_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_8.Designer.cs">
+      <DependentUpon>LOGIN_8.cs</DependentUpon>
     </Compile>
     <Compile Include="LUCHA.cs">
       <SubType>Form</SubType>
@@ -139,11 +157,20 @@
     <EmbeddedResource Include="Form_BATALLA.resx">
       <DependentUpon>Form_BATALLA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_TORNEO.resx">
+      <DependentUpon>Form_TORNEO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_4.resx">
+      <DependentUpon>LOGIN_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_8.resx">
+      <DependentUpon>LOGIN_8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LUCHA.resx">
       <DependentUpon>LUCHA.cs</DependentUpon>
@@ -1766,6 +1793,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\HUIR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo_Torneo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTorneo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTorneo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginTorneo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

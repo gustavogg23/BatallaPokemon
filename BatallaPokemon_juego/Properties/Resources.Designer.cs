@@ -413,6 +413,26 @@ namespace BatallaPokemon_juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnTorneo {
+            get {
+                object obj = ResourceManager.GetObject("btnTorneo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnTorneo2 {
+            get {
+                object obj = ResourceManager.GetObject("btnTorneo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bulbasaurespalda {
             get {
                 object obj = ResourceManager.GetObject("bulbasaurespalda", resourceCulture);
@@ -1146,6 +1166,16 @@ namespace BatallaPokemon_juego.Properties {
         internal static System.Drawing.Bitmap Fondo_inicio {
             get {
                 object obj = ResourceManager.GetObject("Fondo_inicio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fondo_Torneo {
+            get {
+                object obj = ResourceManager.GetObject("fondo_Torneo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1956,6 +1986,16 @@ namespace BatallaPokemon_juego.Properties {
         internal static System.Drawing.Bitmap lickitungfrente {
             get {
                 object obj = ResourceManager.GetObject("lickitungfrente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loginTorneo {
+            get {
+                object obj = ResourceManager.GetObject("loginTorneo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

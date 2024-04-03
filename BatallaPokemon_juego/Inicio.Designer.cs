@@ -70,6 +70,7 @@
             this.torneoBoton.Size = new System.Drawing.Size(190, 62);
             this.torneoBoton.TabIndex = 1;
             this.torneoBoton.UseVisualStyleBackColor = false;
+            this.torneoBoton.Click += new System.EventHandler(this.torneoBoton_Click);
             // 
             // rankingBoton
             // 
