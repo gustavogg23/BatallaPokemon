@@ -176,7 +176,7 @@ namespace BatallaPokemon_juego
                 // Si luego del ataque la vida del defensor es 0 o menor a 0 se elimina el pokemon de la lista de pokemones del entrenador
                 if (defensor.getVida() <= 0)
                 {
-                    getEntrenadorNoTurno().getPokemones().eliminar(defensor.getNumero());
+                    //getEntrenadorNoTurno().getPokemones().eliminar(defensor.getNumero());
 
                     // Se verifica si la batalla ha terminado
                     if (BatallaTerminada())
@@ -185,10 +185,6 @@ namespace BatallaPokemon_juego
                         ganador.setVictorias(ganador.getVictorias() + 1); // Se le suma una victoria al ganador
                     }
                 }
-
-                // Se cambia el turno
-                cambiarTurno();
-
                 // Se aplica el efecto del estado alterado
                 AplicarEfectoEstado();
                 // Se verifica si la batalla ha terminado
@@ -438,6 +434,27 @@ namespace BatallaPokemon_juego
 
             // Se cambia el turno
             cambiarTurno();
+        }
+
+        public void CambiarASiguientePokemon()
+        {
+            // Se obtiene el entrenador que no tiene el turno
+            Entrenador entrenadorNoTurno = getEntrenadorNoTurno();
+
+            Pokemon pokemonActualNoTurno = (entrenadorNoTurno == entrenador1) ? pokemonActivo1 : pokemonActivo2;
+
+            // Se obtiene el siguiente pokemon en la lista del entrenador
+            Pokemon siguientePokemon = entrenadorNoTurno.getPokemones().getSiguiente(pokemonActualNoTurno);
+
+            // Se cambia el pokemon activo del entrenador que no tiene el turno
+            if (entrenadorNoTurno == entrenador1)
+            {
+                pokemonActivo1 = siguientePokemon;
+            }
+            else
+            {
+                pokemonActivo2 = siguientePokemon;
+            }
         }
 
         // Método para usar un item

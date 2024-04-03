@@ -23,9 +23,11 @@ namespace BatallaPokemon_juego
         {
             // Se obtiene la información del entrenador en turno
             Entrenador entrenadorTurno = InfoBatalla.batalla.getEntrenadorTurno();
+            Entrenador entrenadorNoTurno = InfoBatalla.batalla.getEntrenadorNoTurno();
 
             // Se obtiene la información del pokemon en turno
             Pokemon pokemonTurno = (entrenadorTurno == InfoBatalla.batalla.getEntrenador1()) ? InfoBatalla.batalla.getPokemonActivo1() : InfoBatalla.batalla.getPokemonActivo2();
+            Pokemon pokemonNoTurno = (entrenadorNoTurno == InfoBatalla.batalla.getEntrenador1()) ? InfoBatalla.batalla.getPokemonActivo1() : InfoBatalla.batalla.getPokemonActivo2();
 
             // Se recorre el arreglo de los ataques del pokemon
             for (int i = 0; i < pokemonTurno.getAtaques().Length; i++)
@@ -49,9 +51,19 @@ namespace BatallaPokemon_juego
                     // Se llama al método Atacar de la batalla al presionar el botón
                     InfoBatalla.batalla.atacar(indiceAtaque);
 
+                    // Se verifica si la vida del pokemon en turno es menor o igual a 0
+                    if (pokemonNoTurno.getVida() <= 0)
+                    {
+                        MessageBox.Show("El pokemon " + pokemonNoTurno.getNombre() + " ha sido derrotado");
+                        InfoBatalla.batalla.CambiarASiguientePokemon();
+                        entrenadorNoTurno.getPokemones().eliminar(pokemonNoTurno.getNumero());                        
+                    }
+
                     // Se actualiza la información de los pokemones
                     AtaqueRealizado?.Invoke(this, EventArgs.Empty);
 
+                    // Se cambia el turno
+                    InfoBatalla.batalla.cambiarTurno();
                     this.Close();
                 };
 

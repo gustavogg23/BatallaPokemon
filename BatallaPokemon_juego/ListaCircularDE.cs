@@ -146,5 +146,30 @@ namespace BatallaPokemon_juego
             } 
             while (aux != cabeza); // Mientras el nodo auxiliar no sea la cabeza
         }
+
+        public Pokemon getSiguiente(Pokemon pokemonActual)
+        {
+            NodoPokemon aux = cabeza; // Se crea un nodo auxiliar para recorrer la lista
+            while (aux != null) // Mientras no se llegue al final de la lista 
+            {
+                if (aux.getValor().getNumero() == pokemonActual.getNumero()) // Si el número del pokemon del nodo auxiliar es igual al número del pokemon actual
+                {
+                    if (aux.getSiguiente() != null) // Si el siguiente nodo no es nulo
+                    {
+                        return aux.getSiguiente().getValor(); // Se retorna el pokemon del siguiente nodo
+                    }
+                    else // Si el siguiente nodo es nulo, se retorna el pokemon de la cabeza de la lista
+                    {
+                        return cabeza.getValor();
+                    }
+                }
+                aux = aux.getSiguiente(); // Se pasa al siguiente nodo
+                if (aux == cabeza) // Si el nodo auxiliar es la cabeza, se termina el ciclo
+                {
+                    return null; // Si no se encuentra el pokemon, se retorna nulo
+                }
+            }
+            return null; // Si no se encuentra el pokemon, se retorna nulo
+        }
     }
 }
