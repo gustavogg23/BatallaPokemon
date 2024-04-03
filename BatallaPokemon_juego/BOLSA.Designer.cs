@@ -28,97 +28,102 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnPocion = new System.Windows.Forms.Button();
+            this.btnSuper = new System.Windows.Forms.Button();
+            this.btnHiper = new System.Windows.Forms.Button();
+            this.btnAntiPar = new System.Windows.Forms.Button();
+            this.btnAntidoto = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btnCura = new System.Windows.Forms.Button();
+            this.btnMax = new System.Windows.Forms.Button();
+            this.btnPrecision = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnPocion
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnPocion;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(11, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(221, 53);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "POCIÓN";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnPocion.BackColor = System.Drawing.Color.Transparent;
+            this.btnPocion.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnPocion;
+            this.btnPocion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPocion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPocion.FlatAppearance.BorderSize = 0;
+            this.btnPocion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPocion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPocion.Location = new System.Drawing.Point(11, 50);
+            this.btnPocion.Name = "btnPocion";
+            this.btnPocion.Size = new System.Drawing.Size(221, 53);
+            this.btnPocion.TabIndex = 0;
+            this.btnPocion.Text = "Poción";
+            this.btnPocion.UseVisualStyleBackColor = false;
+            this.btnPocion.Click += new System.EventHandler(this.btnPocion_Click);
             // 
-            // button2
+            // btnSuper
             // 
-            this.button2.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnSuperPocion;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(11, 109);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(221, 53);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "SUPERPOCIÓN";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSuper.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnSuperPocion;
+            this.btnSuper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSuper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSuper.FlatAppearance.BorderSize = 0;
+            this.btnSuper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSuper.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuper.Location = new System.Drawing.Point(11, 109);
+            this.btnSuper.Name = "btnSuper";
+            this.btnSuper.Size = new System.Drawing.Size(221, 53);
+            this.btnSuper.TabIndex = 1;
+            this.btnSuper.Text = "Superpoción";
+            this.btnSuper.UseVisualStyleBackColor = true;
+            this.btnSuper.Click += new System.EventHandler(this.btnSuper_Click);
             // 
-            // button3
+            // btnHiper
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnHiperPocion;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(11, 168);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(221, 53);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "HIPERPOCIÓN";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnHiper.BackColor = System.Drawing.Color.Transparent;
+            this.btnHiper.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnHiperPocion;
+            this.btnHiper.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnHiper.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHiper.FlatAppearance.BorderSize = 0;
+            this.btnHiper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHiper.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHiper.Location = new System.Drawing.Point(11, 168);
+            this.btnHiper.Name = "btnHiper";
+            this.btnHiper.Size = new System.Drawing.Size(221, 53);
+            this.btnHiper.TabIndex = 2;
+            this.btnHiper.Text = "Hiperpoción";
+            this.btnHiper.UseVisualStyleBackColor = false;
+            this.btnHiper.Click += new System.EventHandler(this.btnHiper_Click);
             // 
-            // button4
+            // btnAntiPar
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnAntiparalisis;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(251, 50);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(221, 53);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "ANTIPARÁLISIS";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAntiPar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAntiPar.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnAntiparalisis;
+            this.btnAntiPar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAntiPar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAntiPar.FlatAppearance.BorderSize = 0;
+            this.btnAntiPar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAntiPar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAntiPar.Location = new System.Drawing.Point(251, 50);
+            this.btnAntiPar.Name = "btnAntiPar";
+            this.btnAntiPar.Size = new System.Drawing.Size(221, 53);
+            this.btnAntiPar.TabIndex = 3;
+            this.btnAntiPar.Text = "Antiparálisis";
+            this.btnAntiPar.UseVisualStyleBackColor = false;
+            this.btnAntiPar.Click += new System.EventHandler(this.btnAntiPar_Click);
             // 
-            // button5
+            // btnAntidoto
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnAntidoto;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(251, 109);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(221, 53);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "ANTÍDOTO";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnAntidoto.BackColor = System.Drawing.Color.Transparent;
+            this.btnAntidoto.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnAntidoto;
+            this.btnAntidoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAntidoto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAntidoto.FlatAppearance.BorderSize = 0;
+            this.btnAntidoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAntidoto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAntidoto.Location = new System.Drawing.Point(251, 109);
+            this.btnAntidoto.Name = "btnAntidoto";
+            this.btnAntidoto.Size = new System.Drawing.Size(221, 53);
+            this.btnAntidoto.TabIndex = 4;
+            this.btnAntidoto.Text = "Antídoto";
+            this.btnAntidoto.UseVisualStyleBackColor = false;
+            this.btnAntidoto.Click += new System.EventHandler(this.btnAntidoto_Click);
             // 
             // button6
             // 
@@ -128,61 +133,65 @@
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(251, 168);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(221, 53);
             this.button6.TabIndex = 5;
-            this.button6.Text = "DESPERTAR";
+            this.button6.Text = "Despertar";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // btnCura
             // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnCuraTotal;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(493, 50);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(221, 53);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "CURA TOTAL";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnCura.BackColor = System.Drawing.Color.Transparent;
+            this.btnCura.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnCuraTotal;
+            this.btnCura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCura.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCura.FlatAppearance.BorderSize = 0;
+            this.btnCura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCura.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCura.Location = new System.Drawing.Point(493, 50);
+            this.btnCura.Name = "btnCura";
+            this.btnCura.Size = new System.Drawing.Size(221, 53);
+            this.btnCura.TabIndex = 6;
+            this.btnCura.Text = "Cura Total";
+            this.btnCura.UseVisualStyleBackColor = false;
+            this.btnCura.Click += new System.EventHandler(this.btnCura_Click);
             // 
-            // button8
+            // btnMax
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnMaxPocion;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(492, 109);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(221, 53);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "MAX POCIÓN";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnMax.BackColor = System.Drawing.Color.Transparent;
+            this.btnMax.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnMaxPocion;
+            this.btnMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMax.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMax.FlatAppearance.BorderSize = 0;
+            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMax.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMax.Location = new System.Drawing.Point(492, 109);
+            this.btnMax.Name = "btnMax";
+            this.btnMax.Size = new System.Drawing.Size(221, 53);
+            this.btnMax.TabIndex = 7;
+            this.btnMax.Text = "Max Poción";
+            this.btnMax.UseVisualStyleBackColor = false;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
-            // button9
+            // btnPrecision
             // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnPrecisionX;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(492, 168);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(221, 53);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "PRECISIÓN X";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnPrecision.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrecision.BackgroundImage = global::BatallaPokemon_juego.Properties.Resources.BtnPrecisionX;
+            this.btnPrecision.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPrecision.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrecision.FlatAppearance.BorderSize = 0;
+            this.btnPrecision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrecision.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrecision.Location = new System.Drawing.Point(492, 168);
+            this.btnPrecision.Name = "btnPrecision";
+            this.btnPrecision.Size = new System.Drawing.Size(221, 53);
+            this.btnPrecision.TabIndex = 8;
+            this.btnPrecision.Text = "Precisión X";
+            this.btnPrecision.UseVisualStyleBackColor = false;
+            this.btnPrecision.Click += new System.EventHandler(this.btnPrecision_Click);
             // 
             // pictureBox1
             // 
@@ -200,15 +209,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 264);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnPrecision);
+            this.Controls.Add(this.btnMax);
+            this.Controls.Add(this.btnCura);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAntidoto);
+            this.Controls.Add(this.btnAntiPar);
+            this.Controls.Add(this.btnHiper);
+            this.Controls.Add(this.btnSuper);
+            this.Controls.Add(this.btnPocion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "BOLSA";
@@ -220,15 +229,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnPocion;
+        private System.Windows.Forms.Button btnSuper;
+        private System.Windows.Forms.Button btnHiper;
+        private System.Windows.Forms.Button btnAntiPar;
+        private System.Windows.Forms.Button btnAntidoto;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnCura;
+        private System.Windows.Forms.Button btnMax;
+        private System.Windows.Forms.Button btnPrecision;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

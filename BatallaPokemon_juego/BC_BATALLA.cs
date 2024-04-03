@@ -76,7 +76,7 @@ namespace BatallaPokemon_juego
         }
 
         // Método para agregar los items a la lista de items del entrenador para poder usar en batalla
-        private void AgregarItems()
+        public void AgregarItems()
         {
             // Se crea cada objeto Item con su nombre y cantidad
             Item pocion = new Item("Poción", 3);

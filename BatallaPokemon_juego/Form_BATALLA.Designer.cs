@@ -131,6 +131,8 @@
             this.huir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.huir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.huir.FlatAppearance.BorderSize = 0;
+            this.huir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.huir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.huir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.huir.Location = new System.Drawing.Point(1038, 590);
             this.huir.Name = "huir";

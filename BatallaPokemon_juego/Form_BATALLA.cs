@@ -137,6 +137,7 @@ namespace BatallaPokemon_juego
         private void bolsa_Click(object sender, EventArgs e)
         {
             BOLSA FormBOLSA = new BOLSA();
+            FormBOLSA.ItemUsado += (s, args) => ActualizarInfoPokemon();
             FormBOLSA.ShowDialog();
         }
 
@@ -173,8 +174,10 @@ namespace BatallaPokemon_juego
 
         private void huir_Click(object sender, EventArgs e)
         {
+            Entrenador ganador = InfoBatalla.batalla.getEntrenadorNoTurno();
+
             // Mostrar un mensaje al hacer clic en "HUIR"
-            MessageBox.Show("El jugador se ha rendido, el ganador es: [Nombre del ganador]");
+            MessageBox.Show("El jugador se ha rendido, el ganador es: " + ganador.getNombre());
 
             // Cerrar el formulario actual y mostrar el menú de inicio
             this.Close();
